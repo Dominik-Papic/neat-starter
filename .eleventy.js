@@ -50,6 +50,11 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  // Define a collection for 'news' items
+  eleventyConfig.addCollection("news", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/news/*.md").reverse(); // Ensures latest news is first
+  });
+
   // Let Eleventy transform HTML files as Nunjucks
   return {
     dir: {
@@ -59,4 +64,5 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
   };
 };
+
 
