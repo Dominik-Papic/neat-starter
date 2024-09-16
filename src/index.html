@@ -213,7 +213,7 @@
             {% for news in collections.news %}
             <div class="newselement">
               <div class="text-block">
-                <p>{{ news.date | date("MMMM D, YYYY") }}: {{ news.templateContent | safe }}</p>
+                {{ news.data.description }}
               </div>
             </div>
             {% endfor %}

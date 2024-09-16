@@ -20,7 +20,10 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
@@ -39,6 +42,8 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+
+
   - label: "Settings"
     name: "settings"
     editor:
