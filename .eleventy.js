@@ -55,6 +55,11 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/news/*.md").reverse(); // Ensures latest news is first
   });
 
+  eleventyConfig.addCollection("slides", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/slides/*.md");
+  });
+  
+
   // Let Eleventy transform HTML files as Nunjucks
   return {
     dir: {

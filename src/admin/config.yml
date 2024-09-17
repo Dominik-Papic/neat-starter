@@ -23,6 +23,13 @@ collections:
       - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "slides"
+    label: "Slides"
+    folder: "src/slides"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
 
   - label: "Blog"
     name: "blog"
