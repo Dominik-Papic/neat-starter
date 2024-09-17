@@ -154,9 +154,8 @@
           >
             <div class="w-slider-mask">
               {% for slide in collections.slides %}
-              <div class="slide w-slide">
-                <img src="{{ slide.data.image }}" class="slike" />
-              </div>
+                <div class="slide w-slide" style="background-image: url('{{ slide.data.image }}'); background-size: cover; background-position: center;">
+                </div>
               {% endfor %}
             </div>
             <div class="w-slider-arrow-left">
