@@ -787,6 +787,11 @@ textarea.w-input, textarea.w-select {
   display: none !important;
 }
 
+.slike {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 @media screen and (max-width: 991px) {
   .w-container {
     max-width: 728px;
