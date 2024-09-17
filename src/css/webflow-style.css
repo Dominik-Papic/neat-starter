@@ -1212,7 +1212,7 @@ textarea.w-input, textarea.w-select {
   vertical-align: top;
   white-space: normal;
   text-align: left;
-  width: 600px;
+  width: 100%;
   height: 100%;
   display: inline-block;
   position: relative;
@@ -4928,6 +4928,7 @@ blockquote {
   border-bottom: 1px solid #dfdfdf;
   padding-top: 0;
   padding-bottom: 0;
+  max-height: 450px;
 }
 
 .paragraph-2 {
