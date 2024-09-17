@@ -142,126 +142,23 @@
     <section class="professors">
       <div class="div-block-14">
         <div class="div-block-15-copy">
+          {% for person in collections.people %}
           <div
             id="w-node-e5c7f3ae-ccc4-10ff-4700-6ee4a9536937-7e3352eb"
             class="peopleelement-copy"
           >
-            <div class="name">dr. sc. Morana Dulić</div>
+            <div class="name">{{ person.data.name }}</div>
             <div class="div-block-16">
-              <div class="div-block-17-copy _1"></div>
+              <div class="div-block-17-copy _1" style="background-image: url('{{ person.data.image }}'); background-size: cover; background-position: center;"></div>
               <div class="div-block-18">
                 <div class="contact">
-                  +385 1 4606 235<br />gruic@chem.pmf.hr
+                  {{ person.data.contact }}<br>{{ person.data.email }}
                 </div>
-                <div class="title">Assistant Professor</div>
+                <div class="title">{{ person.data.title }}</div>
               </div>
             </div>
           </div>
-          <div
-            id="w-node-b142e717-a6ff-8555-b4d3-ed2a418835ce-7e3352eb"
-            class="peopleelement"
-          >
-            <div class="name">dr. sc. Marko Močibob</div>
-            <div class="div-block-16">
-              <div class="div-block-17 _3"></div>
-              <div class="div-block-18">
-                <div class="contact">
-                  +385 1 4606 235<br />mocibob@chem.pmf.hr
-                </div>
-                <div class="title">Assistant Professor</div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-cee0d73f-3659-9410-0377-c67f9e6e585c-7e3352eb"
-            class="peopleelement"
-          >
-            <div class="name">dr. sc. Jasmina Rokov Plavec</div>
-            <div class="div-block-16">
-              <div class="div-block-17 _4"></div>
-              <div class="div-block-18">
-                <div class="contact">
-                  +385 1 4606 232<br />rokov@chem.pmf.hr
-                </div>
-                <div class="title">Assistant Professor</div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-d00e131e-3d9c-fa03-f77f-f65719bfca5d-7e3352eb"
-            class="peopleelement"
-          >
-            <div class="name">dr. sc. Igor Živković</div>
-            <div class="div-block-16">
-              <div class="div-block-17 _11"></div>
-              <div class="div-block-18">
-                <div class="contact">
-                  +385 1 4606 234<br />izivkovic@chem.pmf.hr
-                </div>
-                <div class="title">Research Assistant</div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-_429a8f9c-eb7e-a6e0-cf04-59bef5929f2a-7e3352eb"
-            class="peopleelement"
-          >
-            <div class="name">Marija Pranjić, mag. chem.</div>
-            <div class="div-block-16">
-              <div class="div-block-17 _9"></div>
-              <div class="div-block-18">
-                <div class="contact">
-                  +385 1 4606 234<br />marija.pranjic@chem.pmf.hr
-                </div>
-                <div class="title">Research Assistant</div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-_48ad22db-3074-879e-b2e5-06b3a39a2263-7e3352eb"
-            class="peopleelement"
-          >
-            <div class="name">Petra Kozulić, mag. chem.</div>
-            <div class="div-block-16">
-              <div class="div-block-17 _9"></div>
-              <div class="div-block-18">
-                <div class="contact">
-                  +385 1 4606 234<br />petra.kozulic@chem.pmf.hr
-                </div>
-                <div class="title">Research Assistant</div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-_2517298e-cc82-8908-f668-f2e5f2e30e31-7e3352eb"
-            class="peopleelement"
-          >
-            <div class="name">Robert Pendelić, univ. mag. biol. mol.</div>
-            <div class="div-block-16">
-              <div class="div-block-17 _9"></div>
-              <div class="div-block-18">
-                <div class="contact">
-                  +385 1 4606 233<br />robert.pendelic@chem.pmf.hr
-                </div>
-                <div class="title">Research Assistant</div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-_4d9bb2f3-e33e-09ce-abf9-219da016e82d-7e3352eb"
-            class="peopleelement"
-          >
-            <div class="name">Karla Peranić, mag. biol. exp.</div>
-            <div class="div-block-16">
-              <div class="div-block-17 _9"></div>
-              <div class="div-block-18">
-                <div class="contact">
-                  +385 1 4606 236<br />karla.peranic@chem.pmf.hr
-                </div>
-                <div class="title">Technitian</div>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>

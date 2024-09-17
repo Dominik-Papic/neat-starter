@@ -58,6 +58,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("slides", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/slides/*.md");
   });
+
+  eleventyConfig.addCollection("people", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/people/*.md");
+  });
   
 
   // Let Eleventy transform HTML files as Nunjucks
