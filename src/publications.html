@@ -98,217 +98,36 @@
         <div class="div-block-11">
           <div class="div-block-12">
             <h1 class="heading-3">Selected publications</h1>
+
+            {% for publication in collections.selectedPublications %}
             <div class="publicationelement">
-              <div class="w-richtext">
-                <p>
-                  <strong>• The evolutionary history of the HUP domain.</strong
-                  >‍<a
-                    href="http://web.archive.org/web/20220812180405/https://www.tandfonline.com/doi/full/10.1080/10409238.2021.1957764"
-                    >Critical Reviews in Biochemistry and Molecular Biology
-                    (2021), doi:10.1080/10409238.2021.1957764</a
-                  >Ita Gruic-Sovulj, Liam M. Longo, Jagoda Jablonska, Dan S.
-                  Tawfik
-                </p>
+              <div class="w-richtext"> 
+                <strong>• {{ publication.data.title }}</strong>
+                <p>{{ publication.data.description }}</p>
               </div>
             </div>
-            <div class="publicationelement">
-              <div class="w-richtext">
-                <p>
-                  <strong
-                    >• Polyamines Mediate Folding of Primordial Hyperacidic
-                    Helical Proteins.</strong
-                  ><a
-                    href="http://web.archive.org/web/20220812180405/https://pubs.acs.org/doi/10.1021/acs.biochem.0c00800"
-                    ><strong class="bold-text"
-                      >Biochemistry. 59 (2020), 4456-4462,
-                      doi:10.1021/acs.biochem.0c00800</strong
-                    ></a
-                  ><strong class="bold-text-2"
-                    >Dragana Despotović, Liam M. Longo, Einav Aharon, Amit
-                    Kahana, Tali Scherf, Ita Gruic-Sovulj, Dan S. Tawfik</strong
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="publicationelement">
-              <div class="w-richtext">
-                <p>
-                  <strong
-                    >• How evolution shapes enzyme selectivity – lessons from
-                    aminoacyl‐tRNA synthetases and other amino acid utilizing
-                    enzymes.</strong
-                  ><a
-                    href="http://web.archive.org/web/20220812180405/https://febs.onlinelibrary.wiley.com/doi/full/10.1111/febs.15199"
-                    ><strong class="bold-text-3"
-                      >The FEBS Journal. 287 (2020), 1284-1305,
-                      doi:10.1111/febs.15199</strong
-                    ></a
-                  ><strong class="bold-text-4"
-                    >Dan S. Tawfik, Ita Gruic-Sovulj</strong
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="publicationelement">
-              <div class="w-richtext">
-                <p>
-                  <strong
-                    >• On the Mechanism and Origin of Isoleucyl-tRNA Synthetase
-                    Editing against Norvaline.</strong
-                  ><a
-                    href="http://web.archive.org/web/20220812180405/https://www.sciencedirect.com/science/article/pii/S0022283619300464?via%3Dihub"
-                    ><strong class="bold-text-5"
-                      >Journal of Molecular Biology. 2019,
-                      doi:10.1016/j.jmb.2019.01.029</strong
-                    ></a
-                  ><strong class="bold-text-6"
-                    >Bilus Mirna, Semanjski Maja, Mocibob Marko, Zivkovic Igor,
-                    Cvetesic Nevena, Tawfik S. Dan, Toth-Petroczy Agnes, Macek
-                    Boris, Gruic-Sovulj Ita.</strong
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="publicationelement">
-              <div class="w-richtext">
-                <p>
-                  <strong
-                    >• Kinetic Origin of Substrate Specificity in Post-Transfer
-                    Editing by Leucyl-tRNA Synthetase.</strong
-                  ><a
-                    href="http://web.archive.org/web/20220812180405/https://www.sciencedirect.com/science/article/pii/S002228361730517X"
-                    ><strong class="bold-text-7"
-                      >Journal of Molecular Biology. 430 (2018), 1; 1-16</strong
-                    ></a
-                  ><strong class="bold-text-8"
-                    >Dulic Morana, Cvetesic Nevena, Zivkovic Igor, Palencia
-                    Andrés, Cusack Stephen, Bertosa Branimir, Gruic-Sovulj
-                    Ita.</strong
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="publicationelement">
-              <div class="w-richtext">
-                <p>
-                  <strong
-                    >• Synthetic and editing reactions of aminoacyl-tRNA
-                    synthetases using cognate and non-cognate amino acid
-                    substrates.</strong
-                  ><a
-                    href="http://web.archive.org/web/20220812180405/http://www.sciencedirect.com/science/article/pii/S1046202316303334?via%3Dihub"
-                    ><strong class="bold-text-9"
-                      >Methods. 113 (2017), 13-26</strong
-                    ></a
-                  ><strong class="bold-text-10"
-                    >Cvetesic Nevena, Gruic-Sovulj Ita.</strong
-                  >
-                </p>
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
     </section>
+
     <section class="section-3-copy">
       <div class="div-block-11-copy-copy">
         <h1 class="heading-3">All publications</h1>
-        <div class="publicationelement">
-          <div class="w-richtext">
-            <p>
-              <strong
-                >• Importance of protein intrinsic conformational dynamics and
-                transient nature of non-covalent interactions in ligand binding
-                affinity.</strong
-              ><a
-                href="http://web.archive.org/web/20220812180405/https://www.sciencedirect.com/science/article/abs/pii/S014181302102198X?via%3Dihub"
-                ><strong class="bold-text-11"
-                  >International Journal of Biological Macromolecules 192
-                  (2021), 692-700, doi:10.1016/j.ijbiomac.2021.10.045</strong
-                ></a
-              ><strong class="bold-text-12"
-                >Mario Kekez, Vladimir Zanki, Ivan Antičević, Jasmina Rokov
-                Plavec, Aleksandra Maršavelski</strong
-              >
-            </p>
+
+        {% for publication in collections.publications %}
+          <div class="publicationelement">
+            <div class="w-richtext"> 
+                <strong>• {{ publication.data.title }}</strong>
+                <p>{{ publication.data.description }}</p>
+            </div>
           </div>
-        </div>
-        <div class="publicationelement">
-          <div class="w-richtext">
-            <p>
-              <strong>• The evolutionary history of the HUP domain.</strong
-              ><a
-                href="http://web.archive.org/web/20220812180405/https://www.tandfonline.com/doi/full/10.1080/10409238.2021.1957764"
-                ><strong class="bold-text-13"
-                  >Critical Reviews in Biochemistry and Molecular Biology
-                  (2021), doi:10.1080/10409238.2021.1957764</strong
-                ></a
-              ><strong class="bold-text-14"
-                >Ita Gruic-Sovulj, Liam M. Longo, Jagoda Jablonska, Dan S.
-                Tawfik</strong
-              >
-            </p>
-          </div>
-        </div>
-        <div class="publicationelement">
-          <div class="w-richtext">
-            <p>
-              <strong
-                >• Polyamines Mediate Folding of Primordial Hyperacidic Helical
-                Proteins.</strong
-              ><a
-                href="http://web.archive.org/web/20220812180405/https://pubs.acs.org/doi/10.1021/acs.biochem.0c00800"
-                ><strong class="bold-text-15"
-                  >Biochemistry. 59 (2020), 4456-4462,
-                  doi:10.1021/acs.biochem.0c00800</strong
-                ></a
-              ><strong class="bold-text-16"
-                >Dragana Despotović, Liam M. Longo, Einav Aharon, Amit Kahana,
-                Tali Scherf, Ita Gruic-Sovulj, Dan S. Tawfik</strong
-              >
-            </p>
-          </div>
-        </div>
-        <div class="publicationelement">
-          <div class="w-richtext">
-            <p>
-              <strong
-                >• How evolution shapes enzyme selectivity – lessons from
-                aminoacyl‐tRNA synthetases and other amino acid utilizing
-                enzymes.</strong
-              ><a
-                href="http://web.archive.org/web/20220812180405/https://febs.onlinelibrary.wiley.com/doi/full/10.1111/febs.15199"
-                ><strong class="bold-text-17"
-                  >The FEBS Journal. 287 (2020), 1284-1305,
-                  doi:10.1111/febs.15199</strong
-                ></a
-              ><strong class="bold-text-18"
-                >Dan S. Tawfik, Ita Gruic-Sovulj</strong
-              >
-            </p>
-          </div>
-        </div>
-        <div class="publicationelement">
-          <div class="w-richtext">
-            <p>
-              <strong
-                >• Mechanism of discrimination of isoleucyl‐tRNA synthetase
-                against non‐proteinogenic α‐amino butyrate and its fluorinated
-                analogues.</strong
-              ><a
-                href="http://web.archive.org/web/20220812180405/https://febs.onlinelibrary.wiley.com/doi/abs/10.1111/febs.15053"
-                ><strong class="bold-text-19"
-                  >The FEBS Journal. 2020, doi:/10.1111/febs.15053</strong
-                ></a
-              ><strong class="bold-text-20"
-                >Igor Zivkovic, Johann Moschner, Beate Koksch, Ita Gruic
-                Sovulj.</strong
-              >
-            </p>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </section>
+
+
     <div class="section-dark-2">
       <div class="footer1 footer1-dark">
         <div class="wrap-2 w50-start">

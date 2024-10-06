@@ -62,6 +62,18 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("people", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/people/*.md");
   });
+
+  // Collection for all publications
+  eleventyConfig.addCollection("publications", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/publications/*.md");
+  });
+
+  // Collection for selected publications
+  eleventyConfig.addCollection("selectedPublications", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/publications/*.md").filter(function (item) {
+      return item.data.selected === true;
+    });
+  });
   
 
   // Let Eleventy transform HTML files as Nunjucks
