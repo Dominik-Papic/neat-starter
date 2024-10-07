@@ -65,3 +65,15 @@ collections:
       - { label: "Image", name: "image", widget: "image", required: true }
       - { label: "Button Text", name: "button_text", widget: "string", default: "Read more" }
       - { label: "Button Link", name: "button_link", widget: "string" }
+  
+  - name: "contact"
+    label: "Contact Table"
+    folder: "src/contact"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Room Number", name: "room", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Phone", name: "phone", widget: "string" }

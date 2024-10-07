@@ -79,6 +79,10 @@ module.exports = function (eleventyConfig) {
       return collectionApi.getFilteredByGlob("src/research/*.md");
   });
 
+  eleventyConfig.addCollection("contact", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/contact/*.md");
+  });
+
   
   
 

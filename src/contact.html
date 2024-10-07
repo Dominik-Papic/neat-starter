@@ -75,10 +75,20 @@
               >
             </div>
             <nav role="navigation" class="nav1-menu-wrapper-dark w-nav-menu">
-              <a href="research.html" class="link-dark navigation1-link-dark">Research</a>
-              <a href="publications.html" class="link-dark navigation1-link-dark">Publications</a>
-              <a href="people.html" class="link-dark navigation1-link-dark">People</a>
-              <a href="contact.html" class="link-dark navigation1-link-dark">Contact</a>
+              <a href="research.html" class="link-dark navigation1-link-dark"
+                >Research</a
+              >
+              <a
+                href="publications.html"
+                class="link-dark navigation1-link-dark"
+                >Publications</a
+              >
+              <a href="people.html" class="link-dark navigation1-link-dark"
+                >People</a
+              >
+              <a href="contact.html" class="link-dark navigation1-link-dark"
+                >Contact</a
+              >
             </nav>
             <div class="nav1-menu-btn w-nav-button">
               <img
@@ -152,202 +162,28 @@
                       <div class="table-heading">Action</div>
                     </div>
                   </div>
+
+                  {% for person in collections.contact %}
                   <div class="table-row">
                     <div class="div-block-406"></div>
                     <div class="table-box _2">
-                      <div class="table-data name">
-                        prof. dr. sc. Ita Gruić Sovulj
-                      </div>
+                      <div class="table-data name">{{ person.data.name }}</div>
                     </div>
                     <div class="table-box _2">
-                      <div class="table-data">Professor</div>
+                      <div class="table-data">{{ person.data.position }}</div>
                     </div>
                     <div class="table-box _2">
-                      <div class="table-data">ZBK/303</div>
+                      <div class="table-data">{{ person.data.room }}</div>
                     </div>
                     <div class="table-box _2">
-                      <div class="table-data">gruic@chem.pmf.hr</div>
+                      <div class="table-data">{{ person.data.email }}</div>
                     </div>
                     <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 230</div>
+                      <div class="table-data">{{ person.data.phone }}</div>
                     </div>
                   </div>
-                  <div class="table-row">
-                    <div class="div-block-406"></div>
-                    <div class="table-box _2">
-                      <div class="table-data name">
-                        doc. dr. sc. Morana Dulić
-                      </div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">Assistant Professor</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">ZBK/312a</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">mdulic@chem.pmf.hr</div>
-                    </div>
-                    <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 235</div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="div-block-406"></div>
-                    <div class="table-box _2">
-                      <div class="table-data name">
-                        doc. dr. sc. Marko Močibob
-                      </div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">Assistant Professor</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">ZBK/312a</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">mocibob@chem.pmf.hr</div>
-                    </div>
-                    <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 235</div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="div-block-406"></div>
-                    <div class="table-box _2">
-                      <div class="table-data name">
-                        doc. dr. sc. Jasmina Rokov Plavec
-                      </div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">Assistant Professor</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">ZBK/306</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">rokov@chem.pmf.hr</div>
-                    </div>
-                    <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 232</div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="div-block-406"></div>
-                    <div class="table-box _2">
-                      <div class="table-data name">dr. sc. Mario Kekez</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">Staff Scientist</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">ZBK/301</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">mario.kekez@chem.pmf.hr</div>
-                    </div>
-                    <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 233</div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="div-block-406"></div>
-                    <div class="table-box _2">
-                      <div class="table-data name">
-                        Marija Pranjić, mag. chem.
-                      </div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">Research Assistant</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">ZBK/312</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">marija.pranjic@chem.pmf.hr</div>
-                    </div>
-                    <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 234</div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="div-block-406"></div>
-                    <div class="table-box _2">
-                      <div class="table-data name">dr. sc. Igor Živković</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">Research Assistant</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">ZBK/312</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">izivkovic@chem.pmf.hr</div>
-                    </div>
-                    <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 234</div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="div-block-406"></div>
-                    <div class="table-box _2">
-                      <div class="table-data name">
-                        Petra Kozulić, mag. chem.
-                      </div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">Research Assistant</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">ZBK/312</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">izivkovic@chem.pmf.hr</div>
-                    </div>
-                    <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 234</div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="div-block-406"></div>
-                    <div class="table-box _2">
-                      <div class="table-data name">
-                        RobertPendelić, univ.mag. biol. mol.
-                      </div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">Research Assistant</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">ZBK/312</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">izivkovic@chem.pmf.hr</div>
-                    </div>
-                    <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 233</div>
-                    </div>
-                  </div>
-                  <div class="table-row">
-                    <div class="div-block-406"></div>
-                    <div class="table-box _2">
-                      <div class="table-data name">
-                        KarlaPeranić, mag. biol. exp
-                      </div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">Technitian</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">ZBK/312</div>
-                    </div>
-                    <div class="table-box _2">
-                      <div class="table-data">izivkovic@chem.pmf.hr</div>
-                    </div>
-                    <div class="table-box _2 small">
-                      <div class="table-data">+385 1 4606 236</div>
-                    </div>
-                  </div>
+                  {% endfor %}
+
                 </div>
               </div>
             </div>
@@ -374,8 +210,12 @@
             <div class="footer1-column-headline">
               <div class="text-16-2">Menu</div>
             </div>
-            <a href="/research" class="link-dark footer-link-12-dark">Research</a>
-            <a href="/publications" class="link-dark footer-link-12-dark">Publications</a>
+            <a href="/research" class="link-dark footer-link-12-dark"
+              >Research</a
+            >
+            <a href="/publications" class="link-dark footer-link-12-dark"
+              >Publications</a
+            >
             <a href="/people" class="link-dark footer-link-12-dark">People</a>
             <a href="/contact" class="link-dark footer-link-12-dark">Contact</a>
           </div>
