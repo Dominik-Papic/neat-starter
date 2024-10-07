@@ -1,8 +1,11 @@
 ---
-title: "Sample News Item"
-date: 2024-09-16
-description: "• Prof. Ita Gruic Sovulj was elected to the EMBO Membership. The
-                formal welcome will be held during the meeting of the EMBO
-                community in Heidelberg from 29th October – 1st November 2024.
-                 Congratulations!"
+title: Exploring mechanisms of mupirocin resistance and hyper-resistance
+date: 2024-10-07T10:35:56.667Z
+description: >-
+  • Our manuscript “Exploring mechanisms of mupirocin resistance and
+  hyper-resistance” has
+
+  been accepted in Biochemical Society Transactions (link).
 ---
+Our manuscript “Exploring mechanisms of mupirocin resistance and hyper-resistance” has
+been accepted in Biochemical Society Transactions (link).
