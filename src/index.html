@@ -261,8 +261,9 @@
     </div>
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/webflow-script.js" type="text/javascript"></script>
-    <script>
+    <<script>
       document.addEventListener("DOMContentLoaded", function () {
+        const sliderContainer = document.querySelector(".w-slider-mask");
         const slides = document.querySelectorAll(".w-slide");
         const prevButton = document.querySelector(".w-slider-arrow-left");
         const nextButton = document.querySelector(".w-slider-arrow-right");
@@ -270,12 +271,27 @@
         let currentSlide = 0;
         const slideDuration = 4000; // Time each slide is shown (in milliseconds)
         let slideInterval;
+        let isAnimating = false;
+        
+        // Set the width of each slide and the container
+        const slideWidth = 100; // Percentage
+        sliderContainer.style.width = `${totalSlides * slideWidth}%`;
+        slides.forEach((slide) => {
+          slide.style.width = `${100 / totalSlides}%`;
+          slide.style.float = "left";
+        });
     
         function showSlide(index) {
-          slides.forEach((slide) => {
-            slide.style.display = "none";
-          });
-          slides[index].style.display = "block";
+          if (!isAnimating) {
+            isAnimating = true;
+            sliderContainer.style.transition = "transform 0.5s ease";
+            sliderContainer.style.transform = `translateX(-${index * (100 / totalSlides)}%)`;
+            
+            // Reset the animation state after transition completes
+            sliderContainer.addEventListener("transitionend", () => {
+              isAnimating = false;
+            }, { once: true });
+          }
         }
     
         function nextSlide() {
@@ -313,5 +329,17 @@
       });
     </script>
     
+    <style>
+      .w-slider-mask {
+        display: flex;
+        overflow: hidden;
+      }
+    
+      .w-slide {
+        flex-shrink: 0;
+        transition: transform 0.5s ease;
+      }
+    </style>
+
   </body>
 </html>
