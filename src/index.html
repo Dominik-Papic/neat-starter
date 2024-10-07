@@ -263,63 +263,79 @@
     <script src="js/webflow-script.js" type="text/javascript"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const slides = document.querySelectorAll(".w-slide");
-        const prevButton = document.querySelector(".w-slider-arrow-left");
-        const nextButton = document.querySelector(".w-slider-arrow-right");
-        const totalSlides = slides.length;
-        let currentSlide = 0;
-        const slideDuration = 4000; // Time each slide is shown (in milliseconds)
-        let slideInterval;
+      const slides = document.querySelectorAll(".w-slide");
+      const prevButton = document.querySelector(".w-slider-arrow-left");
+      const nextButton = document.querySelector(".w-slider-arrow-right");
+      const totalSlides = slides.length;
+      let currentSlide = 0;
+      const slideDuration = 4000; // Time each slide is shown (in milliseconds)
+      let slideInterval;
     
-        // Function to show the slide
-        function showSlide(index) {
-          // Hide all slides first
-          slides.forEach((slide) => {
-            slide.style.display = "none";
-          });
-    
-          // Show the current slide
-          slides[index].style.display = "block";
-        }
-    
-        // Function to go to the next slide
-        function nextSlide() {
-          currentSlide = (currentSlide + 1) % totalSlides;
-          showSlide(currentSlide);
-        }
-    
-        // Function to go to the previous slide
-        function prevSlide() {
-          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-          showSlide(currentSlide);
-        }
-    
-        // Start autoplay
-        function startAutoplay() {
-          slideInterval = setInterval(nextSlide, slideDuration);
-        }
-    
-        // Stop autoplay
-        function stopAutoplay() {
-          clearInterval(slideInterval);
-        }
-    
-        // Event listeners for navigation buttons
-        nextButton.addEventListener("click", () => {
-          stopAutoplay();
-          nextSlide();
-          startAutoplay();
+      // Function to show the slide
+      function showSlide(index) {
+        // Hide all slides first
+        slides.forEach((slide) => {
+        slide.style.display = "none";
         });
     
-        prevButton.addEventListener("click", () => {
-          stopAutoplay();
-          prevSlide();
-          startAutoplay();
-        });
+        // Show the current slide with animation
+        slides[index].style.display = "block";
+        slides[index].style.opacity = 0;
+        let opacity = 0;
+        const animationDuration = 1000; // Animation duration (in milliseconds)
+        const animationInterval = 10; // Interval between animation frames (in milliseconds)
+        const targetOpacity = 1;
+        const frames = animationDuration / animationInterval;
+        const opacityIncrement = (targetOpacity - opacity) / frames;
     
-        // Initialize the slideshow
+        const animateSlide = setInterval(() => {
+        opacity += opacityIncrement;
+        slides[index].style.opacity = opacity;
+    
+        if (opacity >= targetOpacity) {
+          clearInterval(animateSlide);
+        }
+        }, animationInterval);
+      }
+    
+      // Function to go to the next slide
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
         showSlide(currentSlide);
+      }
+    
+      // Function to go to the previous slide
+      function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+      }
+    
+      // Start autoplay
+      function startAutoplay() {
+        slideInterval = setInterval(nextSlide, slideDuration);
+      }
+    
+      // Stop autoplay
+      function stopAutoplay() {
+        clearInterval(slideInterval);
+      }
+    
+      // Event listeners for navigation buttons
+      nextButton.addEventListener("click", () => {
+        stopAutoplay();
+        nextSlide();
         startAutoplay();
+      });
+    
+      prevButton.addEventListener("click", () => {
+        stopAutoplay();
+        prevSlide();
+        startAutoplay();
+      });
+    
+      // Initialize the slideshow
+      showSlide(currentSlide);
+      startAutoplay();
       });
     </script>
 
