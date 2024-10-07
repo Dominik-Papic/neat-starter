@@ -1,6 +1,7 @@
 ---
 title: Evolutionarily conserved cysteines in plant cytosolic seryl-tRNA
   synthetase are important for its resistance to oxidation.
+date: 2023-11-22T15:57:00.872Z
 description: >-
   Evic V, Soic R, Mocibob M, Kekez M, Houser J, Wimmerová M, Matković-Čalogović
   D, Gruic-Sovulj
