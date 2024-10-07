@@ -1,0 +1,23 @@
+---
+layout: "base.njk"
+pagination:
+  data: collections.people
+  size: 1
+  alias: person
+permalink: "people/{{ person.fileSlug }}/index.html"
+---
+
+<section class="person-detail">
+  <div class="person-header">
+    <h1>{{ person.data.name }}</h1>
+    <img src="{{ person.data.image }}" alt="{{ person.data.name }}" class="person-image">
+    <div class="person-contact">
+      <p><strong>Contact:</strong> {{ person.data.contact }}</p>
+      <p><strong>Email:</strong> <a href="mailto:{{ person.data.email }}">{{ person.data.email }}</a></p>
+      <p><strong>Title:</strong> {{ person.data.title }}</p>
+    </div>
+  </div>
+  <div class="person-content">
+    {{ person.templateContent | safe }}
+  </div>
+</section>
