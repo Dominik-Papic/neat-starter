@@ -1,23 +1,28 @@
----
-layout: "base.njk"
-pagination:
-  data: collections.people
-  size: 1
-  alias: person
-permalink: "people/{{ person.fileSlug }}/index.html"
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="/_includes/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>{{ name }}</h1>
+    </header>
+    <main>
+      <div class="person-profile">
+        <img src="{{ image }}" alt="{{ name }}" class="profile-image" />
+        <div class="person-details">
+          <p><strong>Title:</strong> {{ title }}</p>
+          <p><strong>Contact:</strong> {{ contact }}</p>
+          <p><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 GRUIĆ - SOVULJ LAB. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
 
-<section class="person-detail">
-  <div class="person-header">
-    <h1>{{ person.data.name }}</h1>
-    <img src="{{ person.data.image }}" alt="{{ person.data.name }}" class="person-image">
-    <div class="person-contact">
-      <p><strong>Contact:</strong> {{ person.data.contact }}</p>
-      <p><strong>Email:</strong> <a href="mailto:{{ person.data.email }}">{{ person.data.email }}</a></p>
-      <p><strong>Title:</strong> {{ person.data.title }}</p>
-    </div>
-  </div>
-  <div class="person-content">
-    {{ person.templateContent | safe }}
-  </div>
-</section>
