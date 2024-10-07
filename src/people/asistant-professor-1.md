@@ -1,5 +1,5 @@
 ---
-name: Morana Dulić
+name: dr. sc. Morana Dulić
 title: asistant professor
 contact: +385 1 4606 235
 email: gruic@chem.pmf.hr
