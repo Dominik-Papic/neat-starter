@@ -73,8 +73,8 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/publications/*.md")
       .filter(function (item) {
         return item.data.selected === true;
-      })
-      .reverse(); // Sort by latest first
+      });
+       // Sort by latest first
   });
 
   eleventyConfig.addCollection("research", function (collectionApi) {
