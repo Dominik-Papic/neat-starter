@@ -3,9 +3,21 @@ const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 
+const markdownIt = require("markdown-it");
+
+
+
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
+
+    // Markdown filter for Nunjucks
+    const markdownLib = markdownIt({ html: true });
+    eleventyConfig.setLibrary("md", markdownLib);
+    eleventyConfig.addFilter("markdown", (content) => {
+      return markdownLib.render(content);
+    });
+  
 
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
