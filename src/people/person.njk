@@ -4,25 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ name }}</title>
-    <link rel="stylesheet" href="/_includes/styles.css" />
+    <link href="/css/webflow-style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <header>
-      <h1>{{ name }}</h1>
-    </header>
-    <main>
-      <div class="person-profile">
-        <img src="{{ image }}" alt="{{ name }}" class="profile-image" />
-        <div class="person-details">
-          <p><strong>Title:</strong> {{ title }}</p>
-          <p><strong>Contact:</strong> {{ contact }}</p>
-          <p><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></p>
+  <body class="body-4">
+    <div class="section-dark">
+      <div class="wrap _w-custom nav1-dark">
+        <div
+          data-collapse="medium"
+          data-animation="over-right"
+          data-duration="400"
+          data-easing="ease"
+          data-easing2="ease"
+          role="banner"
+          class="nav1 w-nav"
+        >
+          <div class="nav1-wrap">
+            <div class="nav1-logo-wrapper">
+              <a href="/" class="link-block-13 w-inline-block">
+                <div class="text-16">
+                  GRUIĆ - SOVULJ LAB<br />PROTEIN
+                  <span class="text-span">SYNTHESIS </span>GROUP
+                </div>
+              </a>
+            </div>
+            <nav role="navigation" class="nav1-menu-wrapper-dark w-nav-menu">
+              <a href="/research.html" class="link-dark navigation1-link-dark">Research</a>
+              <a href="/publications.html" class="link-dark navigation1-link-dark">Publications</a>
+              <a href="/people.html" class="link-dark navigation1-link-dark">People</a>
+              <a href="/contact.html" class="link-dark navigation1-link-dark">Contact</a>
+            </nav>
+            <div class="nav1-menu-btn w-nav-button">
+              <img width="18" src="images/menu-icon-402x.png" alt="Menu" class="nav1-menu-icon" />
+            </div>
+          </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <p>&copy; 2024 GRUIĆ - SOVULJ LAB. All rights reserved.</p>
-    </footer>
+    </div>    
+    
+    <section class="section-4-copy f">
+      <div class="div-block-14">
+        <h1 class="heading-5-copy">{{ name }}</h1>
+        <div class="title">{{ title }}</div>
+        <div class="contact">
+          {{ contact }}<br />
+          <a href="mailto:{{ email }}">{{ email }}</a>
+        </div>
+        <div class="rich-text-content">
+          {{ content | safe }}
+        </div>
+      </div>
+    </section>
+
+    <div class="section-dark-2">
+      <div class="footer1 footer1-dark">
+        <div class="wrap-2 w50-start">
+          <div class="_5-col">
+            <div class="footer1-column-headline">
+              <div class="text-16-2">
+                GRUIĆ - SOVULJ LAB<br />PROTEIN TRANSLATION GROUP
+              </div>
+            </div>
+            <p class="text-14 text-14-60">
+              Division of Biochemistry<br />Department of Chemistry<br />Faculty
+              of Science<br />University of Zagreb<br />Horvatovac 102a, 10000
+              Zagreb, Croatia
+            </p>
+          </div>
+          <div class="_2-col">
+            <div class="footer1-column-headline">
+              <div class="text-16-2">Menu</div>
+            </div>
+            <a href="/research" class="link-dark footer-link-12-dark">Research</a>
+            <a href="/publications" class="link-dark footer-link-12-dark">Publications</a>
+            <a href="/people" class="link-dark footer-link-12-dark">People</a>
+            <a href="/contact" class="link-dark footer-link-12-dark">Contact</a>
+          </div>
+          <div class="_3-col _3-col-last">
+            <div class="footer1-column-headline">
+              <div class="text-16-2">Contact</div>
+            </div>
+            <a href="mailto:gruic@chem.pmf.hr" class="link-dark footer-link-12-dark">gruic@chem.pmf.hr</a>
+            <a href="tel:+38514606230" class="link-dark footer-link-12-dark">+385 1 4606 230</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/webflow-script.js" type="text/javascript"></script>
   </body>
 </html>
 
