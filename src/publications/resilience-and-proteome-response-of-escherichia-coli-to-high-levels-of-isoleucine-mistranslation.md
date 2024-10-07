@@ -6,5 +6,5 @@ description: >-
   Int J Biol
 
   Macromol. 262 (2024):130068. doi: 10.1016/j.ijbiomac.2024.130068.
-selected: true
+selected: false
 ---

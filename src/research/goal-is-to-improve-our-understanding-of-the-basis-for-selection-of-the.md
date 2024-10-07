@@ -1,12 +1,21 @@
 ---
-title: Goal is to improve our understanding of the basis for selection of the
-description: |-
-  goal is to improve our understanding of the basis for selection of the
-  natural amino acid alphabet, and how violation of the coding
-  principles influences cell physiology. We also aim to engineer
-  translational apparatus for incorporation of synthetic amino acids and
-  production of designer proteins with novel features.
-image: /static/img/aleksandra-20marsavelski.jpg
+title: Aminoacyl-tRNA synthetase - antibiotic targets and evolved resistance
+description: >-
+  Aminoacyl-tRNA synthetases (AARSs) are fundamental for life and therefore
+  suitable targets
+
+  for natural and man-made antibiotics. Our recent finding that hyper-resistance to antibiotic
+
+  mupirocin occurs through natural variation of the most conserved catalytic motif (the HIGH
+
+  motif) at the IleRS active site without compromising the enzyme’s housekeeping function
+
+  raises new questions about AARS function and evolution. We aim to explore trade-offs
+
+  associated with antibiotic (hyper)resistance as well as to identify novel AARS inhibitors
+
+  among bacterial natural products.
+image: /static/img/figure_antibiotic-resistance.jpg
 button_text: Read more
 button_link: google.com
 ---
