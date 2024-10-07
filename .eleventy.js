@@ -70,9 +70,11 @@ module.exports = function (eleventyConfig) {
 
   // Collection for selected publications
   eleventyConfig.addCollection("selectedPublications", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/publications/*.md").filter(function (item) {
-      return item.data.selected === true;
-    });
+    return collectionApi.getFilteredByGlob("src/publications/*.md")
+      .filter(function (item) {
+        return item.data.selected === true;
+      })
+      .reverse(); // Sort by latest first
   });
 
   eleventyConfig.addCollection("research", function (collectionApi) {
