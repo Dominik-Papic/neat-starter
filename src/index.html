@@ -213,7 +213,9 @@
             <h2 class="heading-2">News</h2>
             {% for news in collections.news %}
             <div class="newselement">
-              <div class="text-block">{{ news.data.description }}</div>
+              <div class="text-block">
+                <p class="text-block">{{ news.data.description }}</p>
+              </div>
             </div>
             {% endfor %}
           </div>
