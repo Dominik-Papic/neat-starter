@@ -6,7 +6,7 @@
 >
   <head>
     <meta charset="utf-8" />
-    <title>Cards 2.0 - Framework &amp; UI Kit for Webflow</title>
+    <title>Protein Synthesis Group</title>
     <meta
       content="Cards 2.0 are Symbol based Framework/UI Kit for quick design or wireframe of your next landing page project. 100 symbols/elements ready for design or hi-fidelity wireframe for any UI/UX designers or developers out there."
       name="description"
@@ -272,25 +272,28 @@
         const slideDuration = 4000; // Time each slide is shown (in milliseconds)
         let slideInterval;
         let isAnimating = false;
-        
+    
         // Set the width of each slide and the container
         const slideWidth = 100; // Percentage
-        sliderContainer.style.width = `${totalSlides * slideWidth}%`;
         slides.forEach((slide) => {
-          slide.style.width = `${100 / totalSlides}%`;
-          slide.style.float = "left";
+          slide.style.width = `${100}%`; // Each slide should take up 100% of the visible container
+          slide.style.flex = "0 0 100%"; // Prevent flexbox from shrinking the slides
         });
     
         function showSlide(index) {
           if (!isAnimating) {
             isAnimating = true;
             sliderContainer.style.transition = "transform 0.5s ease";
-            sliderContainer.style.transform = `translateX(-${index * (100 / totalSlides)}%)`;
-            
+            sliderContainer.style.transform = `translateX(-${index * 100}%)`;
+    
             // Reset the animation state after transition completes
-            sliderContainer.addEventListener("transitionend", () => {
-              isAnimating = false;
-            }, { once: true });
+            sliderContainer.addEventListener(
+              "transitionend",
+              () => {
+                isAnimating = false;
+              },
+              { once: true }
+            );
           }
         }
     
@@ -332,12 +335,25 @@
     <style>
       .w-slider-mask {
         display: flex;
-        overflow: hidden;
+        overflow: hidden; /* Ensure that slides do not overflow outside the visible area */
+        width: 100%; /* Make sure the mask container is 100% width */
       }
     
       .w-slide {
         flex-shrink: 0;
-        transition: transform 0.5s ease;
+        transition: transform 0.5s ease; /* Smooth slide transition */
+      }
+    
+      .slider {
+        position: relative;
+        width: 100%;
+        max-width: 100%; /* Ensure the slider doesn’t exceed the container */
+      }
+    
+      .w-slide img {
+        width: 100%; /* Ensure images fill the slide */
+        height: auto; /* Maintain image aspect ratio */
+        display: block;
       }
     </style>
 
