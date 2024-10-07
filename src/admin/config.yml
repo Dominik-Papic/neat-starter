@@ -44,6 +44,15 @@ collections:
       - { label: "Email", name: "email", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
+  - name: "collaborators"
+    label: "Collaborators"
+    folder: "src/collaborators"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Institution", name: "institution", widget: "string" }
+      - { label: "People", name: "people", widget: "markdown" }    
+
   - name: "publications"
     label: "Publications"
     folder: "src/publications"
