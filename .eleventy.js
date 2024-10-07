@@ -65,7 +65,7 @@ module.exports = function (eleventyConfig) {
 
   // Collection for all publications
   eleventyConfig.addCollection("publications", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/publications/*.md");
+    return collectionApi.getFilteredByGlob("src/publications/*.md").reverse();
   });
 
   // Collection for selected publications
