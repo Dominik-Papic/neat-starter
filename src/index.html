@@ -263,7 +263,6 @@
     <script src="js/webflow-script.js" type="text/javascript"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const sliderContainer = document.querySelector(".w-slider-mask");
         const slides = document.querySelectorAll(".w-slide");
         const prevButton = document.querySelector(".w-slider-arrow-left");
         const nextButton = document.querySelector(".w-slider-arrow-right");
@@ -271,50 +270,41 @@
         let currentSlide = 0;
         const slideDuration = 4000; // Time each slide is shown (in milliseconds)
         let slideInterval;
-        let isAnimating = false;
     
-        // Set the width of each slide and the container
-        const slideWidth = 100; // Percentage
-        slides.forEach((slide) => {
-          slide.style.width = `${100}%`; // Each slide should take up 100% of the visible container
-          slide.style.flex = "0 0 100%"; // Prevent flexbox from shrinking the slides
-        });
-    
+        // Function to show the slide
         function showSlide(index) {
-          if (!isAnimating) {
-            isAnimating = true;
-            sliderContainer.style.transition = "transform 0.5s ease";
-            sliderContainer.style.transform = `translateX(-${index * 100}%)`;
+          // Hide all slides first
+          slides.forEach((slide) => {
+            slide.style.display = "none";
+          });
     
-            // Reset the animation state after transition completes
-            sliderContainer.addEventListener(
-              "transitionend",
-              () => {
-                isAnimating = false;
-              },
-              { once: true }
-            );
-          }
+          // Show the current slide
+          slides[index].style.display = "block";
         }
     
+        // Function to go to the next slide
         function nextSlide() {
           currentSlide = (currentSlide + 1) % totalSlides;
           showSlide(currentSlide);
         }
     
+        // Function to go to the previous slide
         function prevSlide() {
           currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
           showSlide(currentSlide);
         }
     
+        // Start autoplay
         function startAutoplay() {
           slideInterval = setInterval(nextSlide, slideDuration);
         }
     
+        // Stop autoplay
         function stopAutoplay() {
           clearInterval(slideInterval);
         }
     
+        // Event listeners for navigation buttons
         nextButton.addEventListener("click", () => {
           stopAutoplay();
           nextSlide();
@@ -327,35 +317,11 @@
           startAutoplay();
         });
     
+        // Initialize the slideshow
         showSlide(currentSlide);
         startAutoplay();
       });
     </script>
-    
-    <style>
-      .w-slider-mask {
-        display: flex;
-        overflow: hidden; /* Ensure that slides do not overflow outside the visible area */
-        width: 100%; /* Make sure the mask container is 100% width */
-      }
-    
-      .w-slide {
-        flex-shrink: 0;
-        transition: transform 0.5s ease; /* Smooth slide transition */
-      }
-    
-      .slider {
-        position: relative;
-        width: 100%;
-        max-width: 100%; /* Ensure the slider doesn’t exceed the container */
-      }
-    
-      .w-slide img {
-        width: 100%; /* Ensure images fill the slide */
-        height: auto; /* Maintain image aspect ratio */
-        display: block;
-      }
-    </style>
 
   </body>
 </html>
