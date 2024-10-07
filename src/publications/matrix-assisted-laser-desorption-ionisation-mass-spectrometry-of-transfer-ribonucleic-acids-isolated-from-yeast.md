@@ -1,6 +1,7 @@
 ---
 title: Matrix-assisted laser desorption/ionisation mass spectrometry of transfer
   ribonucleic acids isolated from yeast
+date: 1997-05-19T15:02:11.095Z
 description: >-
   Gruic-Sovulj I, Lüdemann H-C, Hillenkamp F, Weygand-Đurašević I, Kućan Ž,
   Peter-Katalinić J.
