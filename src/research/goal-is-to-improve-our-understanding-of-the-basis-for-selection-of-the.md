@@ -15,7 +15,7 @@ description: >-
   associated with antibiotic (hyper)resistance as well as to identify novel AARS inhibitors
 
   among bacterial natural products.
-image: /static/img/figure_antibiotic-resistance.jpg
+image: /static/img/mupirocin_rezistencija-01.png
 button_text: Read more
 button_link: google.com
 ---

@@ -8,6 +8,6 @@ description: >-
   in FEBS Open Bio
 
 
-  <https://febs.onlinelibrary.wiley.com/doi/full/10.1002/2211-5463.13903>
+  https://febs.onlinelibrary.wiley.com/doi/full/10.1002/2211-5463.13903
 ---
 t﻿xt

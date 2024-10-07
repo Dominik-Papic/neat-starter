@@ -23,7 +23,7 @@ description: >-
   fidelity with mechanistic solutions evolved to establish the mandatory level of AARS
 
   selectivity.
-image: /static/img/aars-quality-control_figure.jpg
+image: /static/img/aars_quality-01-01.png
 button_text: Read more
 button_link: google.com
 ---
