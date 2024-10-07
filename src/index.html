@@ -214,7 +214,7 @@
             {% for news in collections.news %}
             <div class="newselement">
               <div class="text-block">
-                <div class="text-block">{{ news.data.description | safe }}</div>
+                <div class="rich-text-content">{{ news.data.description | safe }}</div>
               </div>
             </div>
             {% endfor %}
