@@ -123,7 +123,7 @@
     {% for research in collections.research %}
     <section class="section-2-copy">
       <div class="div-block-copy">
-        <div class="div-block-3 s">
+        <div id="w-node-_2f725645-d347-eff1-1cfb-73f90a7edb3a-7e3352ec" class="div-block-3 s">
           <div>
             <div class="w-layout-hflex flex-block">
               <h2 class="heading-2 d">{{ research.data.title }}</h2>
@@ -137,6 +137,7 @@
         <img
           src="{{ research.data.image | url }}"
           loading="lazy"
+          id="w-node-c6e49889-bd05-22e0-52e1-dfab3a1d81bc-7e3352ec"
           width="600"
           alt="{{ research.data.title }}"
           sizes="(max-width: 479px) 100vw, (max-width: 767px) 85vw, (max-width: 991px) 600px, 45vw"
@@ -144,6 +145,7 @@
       </div>
     </section>
     {% endfor %}
+    
     
     <div class="div-block-8"><div class="div-block-9"></div></div>
     <div class="section-dark-2">
