@@ -74,6 +74,12 @@ module.exports = function (eleventyConfig) {
       return item.data.selected === true;
     });
   });
+
+  eleventyConfig.addCollection("research", function (collectionApi) {
+      return collectionApi.getFilteredByGlob("src/research/*.md");
+  });
+
+  
   
 
   // Let Eleventy transform HTML files as Nunjucks

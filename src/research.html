@@ -119,102 +119,32 @@
         </p>
       </div>
     </section>
+
+    {% for research in collections.research %}
     <section class="section-2-copy">
       <div class="div-block-copy">
-        <div
-          id="w-node-_2f725645-d347-eff1-1cfb-73f90a7edb3a-7e3352ec"
-          class="div-block-3 s"
-        >
+        <div class="div-block-3 s">
           <div>
             <div class="w-layout-hflex flex-block">
-              <h2 class="heading-2 d">
-                Aminoacyl-tRNA synthetase – mechanisms, quality control and
-                physiology
-              </h2>
+              <h2 class="heading-2 d">{{ research.data.title }}</h2>
             </div>
-            <p class="paragraph-2">
-              Aminoacyl-tRNA synthetases (AARSs) provide a unique model for
-              studying the evolution of enzyme selectivity. The Achilles heel of
-              AARS selectivity, which is the rejection of non-cognate amino
-              acids at the first encounter, has been addressed by the evolution
-              of editing that clears misrecognized amino acids in the synthetic
-              (pre-transfer editing) and editing (post-transfer editing) active
-              sites. The specificity for a large tRNA substrate, in contrast,
-              relies on the acquisition of a specific tRNA-binding domain. Using
-              biochemical, genetic and enzyme kinetic approaches we aim to
-              understand how AARS selectivity evolved addressing fundamental
-              questions related to the evolution of proteins and biocatalysis.
-              By studying the consequences of AARS errors at the cellular level,
-              we aim to relate requirements for high fidelity with mechanistic
-              solutions evolved to establish the mandatory level of AARS
-              selectivity.
-            </p>
-            <a href="#" class="button w-button">Read more</a>
+            <p class="paragraph-2">{{ research.data.description }}</p>
+            <a href="{{ research.data.button_link }}" class="button w-button">
+              {{ research.data.button_text }}
+            </a>
           </div>
         </div>
         <img
-          src="images/research.jpg"
+          src="{{ research.data.image | url }}"
           loading="lazy"
           width="600"
-          id="w-node-c6e49889-bd05-22e0-52e1-dfab3a1d81bc-7e3352ec"
-          alt=""
-          srcset="
-            images/research-p-500.jpg   500w,
-            images/research-p-800.jpg   800w,
-            images/research-p-1080.jpg 1080w,
-            images/research-p-1600.jpg 1600w,
-            images/research-p-2000.jpg 2000w,
-            images/research-p-2600.jpg 2600w,
-            images/research.jpg        3000w
-          "
+          alt="{{ research.data.title }}"
           sizes="(max-width: 479px) 100vw, (max-width: 767px) 85vw, (max-width: 991px) 600px, 45vw"
         />
       </div>
     </section>
-    <section class="section-2-copy">
-      <div class="div-block-copy">
-        <div
-          id="w-node-c680028d-93b1-8227-3a2c-685525f05604-7e3352ec"
-          class="div-block-3 s"
-        >
-          <div>
-            <div class="w-layout-hflex flex-block">
-              <h2 class="heading-2 d">
-                Aminoacyl-tRNA synthetase - antibiotic targets and evolved
-                resistance
-              </h2>
-            </div>
-            <p class="paragraph-2">
-              Aminoacyl-tRNA synthetases (AARSs) are fundamental for life and
-              therefore suitable targets for natural and man-made antibiotics.
-              Our recent finding that hyper-resistance to antibiotic mupirocin
-              occurs through natural variation of the most conserved catalytic
-              motif (the HIGH motif) at the IleRS active site without
-              compromising the enzyme’s housekeeping function raises new
-              questions about AARS function and evolution. We aim to explore
-              trade-offs associated with antibiotic (hyper)resistance as well as
-              to identify novel AARS inhibitors among bacterial natural
-              products.
-            </p>
-            <a href="#" class="button w-button">Read more</a>
-          </div>
-        </div>
-        <img
-          src="images/mala-20slika-201.jpg"
-          loading="lazy"
-          width="600"
-          id="w-node-c680028d-93b1-8227-3a2c-685525f0560d-7e3352ec"
-          alt=""
-          srcset="
-            images/mala-20slika-201-p-500.jpg   500w,
-            images/mala-20slika-201-p-800.jpg   800w,
-            images/mala-20slika-201-p-1080.jpg 1080w,
-            images/mala-20slika-201.jpg        1084w
-          "
-          sizes="(max-width: 479px) 100vw, (max-width: 767px) 85vw, (max-width: 991px) 600px, 45vw"
-        />
-      </div>
-    </section>
+    {% endfor %}
+    
     <div class="div-block-8"><div class="div-block-9"></div></div>
     <div class="section-dark-2">
       <div class="footer1 footer1-dark">
