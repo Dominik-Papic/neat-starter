@@ -54,7 +54,7 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Selected", name: "selected", widget: "boolean", default: false, hint: "Mark if this is a selected publication." }
   
-   - name: "research"
+  - name: "research"
     label: "Research"
     folder: "src/research"
     create: true
