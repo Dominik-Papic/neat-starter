@@ -49,7 +49,7 @@ collections:
     label: "Publications"
     folder: "src/publications"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
