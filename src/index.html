@@ -72,10 +72,12 @@
     </script>
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/app-icon.png" rel="apple-touch-icon" />
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script
+      type="text/javascript"
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
 
-  
   <body class="body">
     <div class="section-dark">
       <div class="wrap _w-custom nav1-dark">
@@ -171,7 +173,6 @@
             <div class="w-slider-nav w-round"></div>
           </div>
         </div>
-
       </div>
     </section>
     <section class="section-2-copy l">
@@ -214,7 +215,9 @@
             {% for news in collections.news %}
             <div class="newselement">
               <div class="text-block">
-                <div class="rich-text-content">{{ news.data.description | safe }}</div>
+                <div class="rich-text-content">
+                  {{ news.data.description | markdown | safe }}
+                </div>
               </div>
             </div>
             {% endfor %}
@@ -268,81 +271,80 @@
     <script src="js/webflow-script.js" type="text/javascript"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-      const slides = document.querySelectorAll(".w-slide");
-      const prevButton = document.querySelector(".w-slider-arrow-left");
-      const nextButton = document.querySelector(".w-slider-arrow-right");
-      const totalSlides = slides.length;
-      let currentSlide = 0;
-      const slideDuration = 4000; // Time each slide is shown (in milliseconds)
-      let slideInterval;
-    
-      // Function to show the slide
-      function showSlide(index) {
-        // Hide all slides first
-        slides.forEach((slide) => {
-        slide.style.display = "none";
-        });
-    
-        // Show the current slide with animation
-        slides[index].style.display = "block";
-        slides[index].style.opacity = 0;
-        let opacity = 0;
-        const animationDuration = 1000; // Animation duration (in milliseconds)
-        const animationInterval = 10; // Interval between animation frames (in milliseconds)
-        const targetOpacity = 1;
-        const frames = animationDuration / animationInterval;
-        const opacityIncrement = (targetOpacity - opacity) / frames;
-    
-        const animateSlide = setInterval(() => {
-        opacity += opacityIncrement;
-        slides[index].style.opacity = opacity;
-    
-        if (opacity >= targetOpacity) {
-          clearInterval(animateSlide);
+        const slides = document.querySelectorAll(".w-slide");
+        const prevButton = document.querySelector(".w-slider-arrow-left");
+        const nextButton = document.querySelector(".w-slider-arrow-right");
+        const totalSlides = slides.length;
+        let currentSlide = 0;
+        const slideDuration = 4000; // Time each slide is shown (in milliseconds)
+        let slideInterval;
+
+        // Function to show the slide
+        function showSlide(index) {
+          // Hide all slides first
+          slides.forEach((slide) => {
+            slide.style.display = "none";
+          });
+
+          // Show the current slide with animation
+          slides[index].style.display = "block";
+          slides[index].style.opacity = 0;
+          let opacity = 0;
+          const animationDuration = 1000; // Animation duration (in milliseconds)
+          const animationInterval = 10; // Interval between animation frames (in milliseconds)
+          const targetOpacity = 1;
+          const frames = animationDuration / animationInterval;
+          const opacityIncrement = (targetOpacity - opacity) / frames;
+
+          const animateSlide = setInterval(() => {
+            opacity += opacityIncrement;
+            slides[index].style.opacity = opacity;
+
+            if (opacity >= targetOpacity) {
+              clearInterval(animateSlide);
+            }
+          }, animationInterval);
         }
-        }, animationInterval);
-      }
-    
-      // Function to go to the next slide
-      function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
+
+        // Function to go to the next slide
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % totalSlides;
+          showSlide(currentSlide);
+        }
+
+        // Function to go to the previous slide
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+          showSlide(currentSlide);
+        }
+
+        // Start autoplay
+        function startAutoplay() {
+          slideInterval = setInterval(nextSlide, slideDuration);
+        }
+
+        // Stop autoplay
+        function stopAutoplay() {
+          clearInterval(slideInterval);
+        }
+
+        // Event listeners for navigation buttons
+        nextButton.addEventListener("click", () => {
+          stopAutoplay();
+          nextSlide();
+          startAutoplay();
+        });
+
+        prevButton.addEventListener("click", () => {
+          stopAutoplay();
+          prevSlide();
+          startAutoplay();
+        });
+
+        // Initialize the slideshow
         showSlide(currentSlide);
-      }
-    
-      // Function to go to the previous slide
-      function prevSlide() {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        showSlide(currentSlide);
-      }
-    
-      // Start autoplay
-      function startAutoplay() {
-        slideInterval = setInterval(nextSlide, slideDuration);
-      }
-    
-      // Stop autoplay
-      function stopAutoplay() {
-        clearInterval(slideInterval);
-      }
-    
-      // Event listeners for navigation buttons
-      nextButton.addEventListener("click", () => {
-        stopAutoplay();
-        nextSlide();
         startAutoplay();
-      });
-    
-      prevButton.addEventListener("click", () => {
-        stopAutoplay();
-        prevSlide();
-        startAutoplay();
-      });
-    
-      // Initialize the slideshow
-      showSlide(currentSlide);
-      startAutoplay();
       });
     </script>
-
   </body>
 </html>
