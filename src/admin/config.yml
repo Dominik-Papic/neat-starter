@@ -52,7 +52,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Selected", name: "selected", widget: "boolean", default: false, hint: "Mark if this is a selected publication." }
   
   - name: "research"
