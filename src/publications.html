@@ -103,7 +103,7 @@
             <div class="publicationelement">
               <div class="w-richtext"> 
                 <strong>• {{ publication.data.title }}</strong>
-                <p>{{ publication.data.description }}</p>
+                <p>{{ publication.data.description | markdown | safe}}</p>
               </div>
             </div>
             {% endfor %}
