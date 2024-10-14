@@ -97,26 +97,16 @@
                 aria-current="page"
                 class="link-block-13 w-inline-block w--current"
                 ><div class="text-16">
-                  GRUIĆ - SOVULJ LAB<br />PROTEIN
+                  GRUIĆ-SOVULJ  LAB<br />PROTEIN
                   <span class="text-span">SYNTHESIS </span>GROUP
                 </div></a
               >
             </div>
             <nav role="navigation" class="nav1-menu-wrapper-dark w-nav-menu">
-              <a href="research.html" class="link-dark navigation1-link-dark"
-                >Research</a
-              >
-              <a
-                href="publications.html"
-                class="link-dark navigation1-link-dark"
-                >Publications</a
-              >
-              <a href="people.html" class="link-dark navigation1-link-dark"
-                >People</a
-              >
-              <a href="contact.html" class="link-dark navigation1-link-dark"
-                >Contact</a
-              >
+              <a href="people.html" class="link-dark navigation1-link-dark">People</a>
+              <a href="research.html" class="link-dark navigation1-link-dark">Research</a>
+              <a href="publications.html" class="link-dark navigation1-link-dark">Publications</a>
+              <a href="contact.html" class="link-dark navigation1-link-dark">Contact</a>
             </nav>
             <div class="nav1-menu-btn w-nav-button">
               <img
@@ -140,13 +130,7 @@
             <h1 class="heading">Welcome</h1>
             <div class="div-block-4"></div>
             <p class="paragraph">
-              Proteinbiosynthesis is a fundamental process in which genetic
-              information is translated into functional cellular proteome. The
-              key players areaminoacyl-tRNA synthetases, the enzymes that read
-              the genetic code by linkingthe cognate pairs of amino acids and
-              tRNAs for the ribosome. We investigate themechanisms by which
-              aminoacyl-tRNA synthetases establish high aminoacylationaccuracy
-              and their capacity to act as antibiotic targets.
+              {{ welcome.data.welcome_description | markdown | safe }}
             </p>
           </div>
         </div>
@@ -232,7 +216,7 @@
           <div class="_5-col">
             <div class="footer1-column-headline">
               <div class="text-16-2">
-                GRUIĆ - SOVULJ LAB<br />PROTEIN TRANSLATION GROUP
+                GRUIĆ-SOVULJ  LAB<br />PROTEIN SYNTHESIS GROUP
               </div>
             </div>
             <p class="text-14 text-14-60">

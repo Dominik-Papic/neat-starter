@@ -85,7 +85,7 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/publications/*.md")
       .filter(function (item) {
         return item.data.selected === true;
-      });
+      }).reverse();
        // Sort by latest first
   });
 
@@ -95,6 +95,14 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("contact", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/contact/*.md");
+  });
+
+  eleventyConfig.addCollection("welcome", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/welcome/*.md");
+  });
+
+  eleventyConfig.addCollection("people-uvod", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/peopleuvod/*.md");
   });
 
   

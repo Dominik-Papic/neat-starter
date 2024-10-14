@@ -22,7 +22,6 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "markdown" }
       
-
   - name: "slides"
     label: "Slides"
     folder: "src/slides"
@@ -32,6 +31,22 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
+  - name: "welcome"
+    label: "Welcome"
+    folder: "src/welcome"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Welcome Text", name: "welcome_text", widget: "markdown" }
+  
+  - name: "people-uvod"
+    label: "People-uvod"
+    folder: "src/peopleuvod"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Uvod Text", name: "uvod_text", widget: "markdown" }
+     
   - name: "people"
     label: "People"
     folder: "src/people"
@@ -42,6 +57,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Contact Info", name: "contact", widget: "string" }
       - { label: "Email", name: "email", widget: "string" }
+      - { label: "Broj sobe", name: "brojsobe", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Content", name: "content", widget: "markdown" }  
 
