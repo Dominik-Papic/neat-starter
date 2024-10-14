@@ -1,16 +1,10 @@
 backend:
-  # Use netlify identity as backend
   name: git-gateway
   branch: master
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
 media_folder: "src/static/img"
 public_folder: "/static/img"
-
-# Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
-# publish_mode: editorial_workflow
+
 collections:
   - name: "news"
     label: "News"
@@ -21,7 +15,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "markdown" }
-      
+
   - name: "slides"
     label: "Slides"
     folder: "src/slides"
@@ -38,7 +32,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Welcome Text", name: "welcome_text", widget: "markdown" }
-  
+
   - name: "people-uvod"
     label: "People-uvod"
     folder: "src/peopleuvod"
@@ -46,7 +40,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Uvod Text", name: "uvod_text", widget: "markdown" }
-     
+
   - name: "people"
     label: "People"
     folder: "src/people"
@@ -59,7 +53,7 @@ collections:
       - { label: "Email", name: "email", widget: "string" }
       - { label: "Broj sobe", name: "brojsobe", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
-      - { label: "Content", name: "content", widget: "markdown" }  
+      - { label: "Content", name: "content", widget: "markdown" }
 
   - name: "publications"
     label: "Publications"
@@ -70,8 +64,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "markdown" }
-      - { label: "Selected", name: "selected", widget: "boolean", default: false, hint: "Mark if this is a selected publication." }
-  
+      - { label: "Selected", name: "selected", widget: "boolean", default: false }
+
   - name: "research"
     label: "Research"
     folder: "src/research"
@@ -83,9 +77,9 @@ collections:
       - { label: "Image", name: "image", widget: "image", required: true }
       - { label: "Button Text", name: "button_text", widget: "string", default: "Read more" }
       - { label: "Button Link", name: "button_link", widget: "string" }
-  
+
   - name: "contact"
-    label: "Contact Table"
+    label: "Contact"
     folder: "src/contact"
     create: true
     slug: "{{slug}}"

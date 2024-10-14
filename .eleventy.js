@@ -2,69 +2,54 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
-
 const markdownIt = require("markdown-it");
 
-
-
 module.exports = function (eleventyConfig) {
-  // Disable automatic use of your .gitignore
-  eleventyConfig.setUseGitIgnore(false);
-
-    // Markdown filter for Nunjucks
-    const markdownLib = markdownIt({ html: true });
-    eleventyConfig.setLibrary("md", markdownLib);
-    eleventyConfig.addFilter("markdown", (content) => {
-      return markdownLib.render(content);
-    });
+  // Use custom Markdown parser
+  const markdownLib = markdownIt({ html: true });
+  eleventyConfig.setLibrary("md", markdownLib);
   
+  eleventyConfig.addFilter("markdown", (content) => {
+    return markdownLib.render(content);
+  });
 
-  // Merge data instead of overriding
-  eleventyConfig.setDataDeepMerge(true);
-
-  // Human readable date
+  // Human-readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd LLL yyyy");
   });
 
-  // Syntax Highlighting for Code blocks
+  // Syntax highlighting for code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  // To Support .yaml Extension in _data
+  // Support for YAML files
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
-  // Copy Static Files to /_site
+  // Copy static files
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/cdn.min.js": "./static/js/alpine.js",
     "./node_modules/prismjs/themes/prism-tomorrow.css": "./static/css/prism-tomorrow.css",
   });
 
-  // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
-
-  // Copy CSS Folder
   eleventyConfig.addPassthroughCopy("./src/css");
-
-  // Copy favicon to root of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    if (outputPath.endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
+    if (outputPath && outputPath.endsWith(".html")) {
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
       });
-      return minified;
     }
     return content;
   });
 
-  // Define a collection for 'news' items
+  // Collections
   eleventyConfig.addCollection("news", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/news/*.md").reverse(); // Ensures latest news is first
+    return collectionApi.getFilteredByGlob("src/news/*.md").reverse();
   });
 
   eleventyConfig.addCollection("slides", function (collectionApi) {
@@ -75,40 +60,30 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/people/*.md");
   });
 
-  // Collection for all publications
   eleventyConfig.addCollection("publications", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/publications/*.md").reverse();
   });
 
-  // Collection for selected publications
   eleventyConfig.addCollection("selectedPublications", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/publications/*.md")
-      .filter(function (item) {
-        return item.data.selected === true;
-      }).reverse();
-       // Sort by latest first
+    return collectionApi.getFilteredByGlob("src/publications/*.md").filter(item => item.data.selected).reverse();
   });
 
   eleventyConfig.addCollection("research", function (collectionApi) {
-      return collectionApi.getFilteredByGlob("src/research/*.md");
+    return collectionApi.getFilteredByGlob("src/research/*.md");
   });
 
   eleventyConfig.addCollection("contact", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/contact/*.md");
   });
 
-  eleventyConfig.addCollection("welcome", function(collectionApi) {
+  eleventyConfig.addCollection("welcome", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/welcome/*.md");
   });
 
-  eleventyConfig.addCollection("people-uvod", function(collectionApi) {
+  eleventyConfig.addCollection("people-uvod", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/peopleuvod/*.md");
   });
 
-  
-  
-
-  // Let Eleventy transform HTML files as Nunjucks
   return {
     dir: {
       input: "src",
@@ -117,5 +92,3 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
   };
 };
-
-
