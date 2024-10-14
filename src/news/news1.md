@@ -5,7 +5,7 @@ description: >-
   • Our manuscript “Exploring mechanisms of mupirocin resistance and
   hyper-resistance” has
 
-  been accepted in Biochemical Society Transactions (link). [](google.com)
+  been accepted in Biochemical Society Transactions (link).  [google.com](google.com)[](google.com)
 ---
 Our manuscript “Exploring mechanisms of mupirocin resistance and hyper-resistance” has
 been accepted in Biochemical Society Transactions (link).
