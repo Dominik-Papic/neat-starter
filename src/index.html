@@ -130,7 +130,7 @@
             <h1 class="heading">Welcome</h1>
             <div class="div-block-4"></div>
             <p class="paragraph">
-              {{ welcome.data.welcome_description }}
+              {{ welcome.data.welcome_text | markdown | safe }}
             </p>
           </div>
         </div>
@@ -200,7 +200,7 @@
             <div class="newselement">
               <div class="text-block">
                 <div class="rich-text-content">
-                  {{ news.data.description }}
+                  {{ news.data.description | markdown | safe }}
                 </div>
               </div>
             </div>
