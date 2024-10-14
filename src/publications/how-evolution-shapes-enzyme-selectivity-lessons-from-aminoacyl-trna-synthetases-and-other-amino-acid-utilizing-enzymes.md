@@ -4,5 +4,5 @@ title: How evolution shapes enzyme selectivity - lessons from aminoacyl-tRNA
 date: 2020-01-20T15:57:54.597Z
 description: "Tawfik DS*, Gruic-Sovulj I*. FEBS J. 287 (2020) 1284-1305. doi:
   10.1111/febs.15199"
-selected: false
+selected: true
 ---
