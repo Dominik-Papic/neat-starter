@@ -80,7 +80,7 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/welcome/*.md");
   });
 
-  eleventyConfig.addCollection("people-uvod", function (collectionApi) {
+  eleventyConfig.addCollection("peopleuvod", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/peopleuvod/*.md");
   });
 
