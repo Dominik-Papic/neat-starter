@@ -31,6 +31,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Welcome Text", name: "welcome_text", widget: "markdown" }
 
   - name: "people-uvod"
@@ -39,6 +40,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Uvod Text", name: "uvod_text", widget: "markdown" }
 
   - name: "people"
