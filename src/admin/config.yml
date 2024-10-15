@@ -64,7 +64,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Institution Name", name: "institutionname", widget: "string" }
-      - { label: "Names", name: "names", widget: "text" }
+      - { label: "Names", name: "description", widget: "markdown" }
 
   - name: "alumni"
     label: "Alumni"
