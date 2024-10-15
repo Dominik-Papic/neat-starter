@@ -60,6 +60,14 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/people/*.md");
   });
 
+  eleventyConfig.addCollection("alumni", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/alumni/*.md");
+  });
+
+  eleventyConfig.addCollection("collaborators", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/collaborators/*.md");
+  });
+
   eleventyConfig.addCollection("publications", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/publications/*.md").reverse();
   });

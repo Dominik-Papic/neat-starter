@@ -56,6 +56,23 @@ collections:
       - { label: "Broj sobe", name: "brojsobe", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Content", name: "content", widget: "markdown" }
+
+  - name: "collaborators"
+    label: "Collaborators"
+    folder: "src/collaborators"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Institution Name", name: "institutionname", widget: "string" }
+      - { label: "Names", name: "names", widget: "text" }
+
+  - name: "alumni"
+    label: "Alumni"
+    folder: "src/alumni"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
       
 
   - name: "publications"

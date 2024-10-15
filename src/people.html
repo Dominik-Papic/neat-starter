@@ -69,16 +69,26 @@
             <div class="nav1-logo-wrapper">
               <a href="/" class="link-block-13 w-inline-block"
                 ><div class="text-16">
-                  GRUIĆ-SOVULJ  LAB<br />PROTEIN
+                  GRUIĆ-SOVULJ LAB<br />PROTEIN
                   <span class="text-span">SYNTHESIS </span>GROUP
                 </div></a
               >
             </div>
             <nav role="navigation" class="nav1-menu-wrapper-dark w-nav-menu">
-              <a href="/people.html" class="link-dark navigation1-link-dark">People</a>
-              <a href="/research.html" class="link-dark navigation1-link-dark">Research</a>
-              <a href="/publications.html" class="link-dark navigation1-link-dark">Publications</a>
-              <a href="/contact.html" class="link-dark navigation1-link-dark">Contact</a>
+              <a href="/people.html" class="link-dark navigation1-link-dark"
+                >People</a
+              >
+              <a href="/research.html" class="link-dark navigation1-link-dark"
+                >Research</a
+              >
+              <a
+                href="/publications.html"
+                class="link-dark navigation1-link-dark"
+                >Publications</a
+              >
+              <a href="/contact.html" class="link-dark navigation1-link-dark"
+                >Contact</a
+              >
             </nav>
             <div class="nav1-menu-btn w-nav-button">
               <img
@@ -104,7 +114,13 @@
           >
             <div class="name">dr. sc. Ita Gruić Sovulj</div>
             <div class="div-block-16">
-              <div class="div-block-17" style="background-image: url('/static/img/ita_gruic.jpg'); background-size: cover;"></div>
+              <div
+                class="div-block-17"
+                style="
+                  background-image: url('/static/img/ita_gruic.jpg');
+                  background-size: cover;
+                "
+              ></div>
               <div class="div-block-18">
                 <div class="contact">
                   +385 1 4606 230<br />gruic@chem.pmf.hr
@@ -119,10 +135,7 @@
             id="w-node-_8730cf35-d707-24b4-7fce-bc05982e0b6d-7e3352eb"
             class="rich-text-block w-richtext"
           >
-            <p>
-              {{ collections.peopleuvod[0].data.description | safe}}
-            </p>
-                       
+            <p>{{ collections.peopleuvod[0].data.description | safe}}</p>
           </div>
         </div>
       </div>
@@ -130,13 +143,11 @@
     <section class="professors">
       <div class="div-block-14">
         <div class="div-block-15-copy">
-
           {% for person in collections.people %}
           <div
             id="w-node-e5c7f3ae-ccc4-10ff-4700-6ee4a9536937-7e3352eb"
             class="peopleelement-copy"
           >
-          
             <div class="name">{{ person.data.name }}</div>
             <div class="div-block-16">
               <div
@@ -151,10 +162,8 @@
                 <div class="title">{{ person.data.brojsobe }}</div>
               </div>
             </div>
-          
           </div>
           {% endfor %}
-
         </div>
       </div>
     </section>
@@ -163,158 +172,16 @@
         <h1 class="heading-5">Collaborators</h1>
 
         <div class="div-block-15">
-
-          <div
-            id="w-node-_88f9efb8-0edf-f6e7-be8a-e74c021c4605-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">ETH Zürich</div>
+          {% for collaborator in collections.collaborators %}
+          <div id="w-node-{{ collaborator.data.slug }}" class="peopleelement u">
+            <div class="name">{{ collaborator.data.institutionname }}</div>
             <div class="div-block-16">
               <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >prof. dr. sc. Nenad Ban</a
-                  >
-                </div>
+                <div class="contact">{{ collaborator.data.names | safe }}</div>
               </div>
             </div>
           </div>
-          
-          <div
-            id="w-node-_1522d76e-54be-08c1-47ce-0895c46976c5-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">Eberhard Karls Universität Tübingen:</div>
-            <div class="div-block-16">
-              <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >prof. dr. sc. Boris Macek<br />Maja Semanjski, mag. chem.,
-                    PhD Student</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-ba058ed9-fc97-6ff9-1e1d-d347c0bde713-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">Freie Universität Berlin</div>
-            <div class="div-block-16">
-              <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >prof. dr. Beate Koksch</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-_6971a86e-833f-bef9-11ab-b3d142f8cdbc-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">Ruđer Bošković Institute:</div>
-            <div class="div-block-16">
-              <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >dr. sc. Mario Cindric</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-b88ad4d2-6f32-0c48-d8b2-e583aa0e6420-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">EMBL Grenoble:</div>
-            <div class="div-block-16">
-              <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >prof. dr. sc. Stephen Cusack<br />dr. sc. Andres
-                    Palencia</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-_0fc83bac-4c45-2c6b-2509-81fb502e02b4-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">Technische Universität Berlin:</div>
-            <div class="div-block-16">
-              <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >prof. dr. sc. Nediljko Budisa<br />Jan Vollker, PhD
-                    Student</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-_3196018a-3b6d-3084-ecde-50a837437ba7-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">
-              The Centre National de la Recherche Scientifique:
-            </div>
-            <div class="div-block-16">
-              <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >prof. dr. sc. Anne-Marie Duchene</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-_25b69dbc-2317-02c3-480d-d7579fd5a900-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">Biotehniška fakulteta, Univerza v Ljubljani:</div>
-            <div class="div-block-16">
-              <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >prof. dr. sc. Gregor Anderluh<br />Vesna Hodnik, uni. dipl.
-                    biolog</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            id="w-node-_35392c8c-46a2-ae48-9702-42f20c56e892-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">Weizmann Institute of Science</div>
-            <div class="div-block-16">
-              <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >prof. Dan Tawfik</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -350,16 +217,9 @@
             class="peopleelement u"
           >
             <div class="name m">
-              prof. dr. sc. Željko Kućan<br />prof. dr. sc. Ivana
-              Weygand-Đurašević<br />doc.dr. sc. Boris Mildner<br />dr. sc.
-              Sonja Lesjak<br />dr. sc. Nevena Cvetešić<br />dr. sc. Mirna
-              Biluš<br />dr. sc. Nina Franičević<br />Jurica Baranašić, mag.
-              chem.<br />dr. sc. Jelena Jarić<br />dr. sc. Vlatka
-              Godinić-Mikulčić<br />dr. sc. Igor Sviben<br />dr. sc. Ana
-              Crnković<br />dr. sc. Vesna Simunović<br />dr. sc. Silvija
-              Bilokapić<br />dr. sc. Irena Landeka<br />dr. sc. Boris Lenhard<br />dr.
-              sc. Sanda Ročak<br />dr. sc. Ivan Mijaković<br />Željka Majić,
-              dipl. ing.<br />Davor Katušić, dipl. ing.<br />Željka Brajdić
+              {% for alumni in collections.alumni %} {{ alumni.data.name | safe
+              }}<br />
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -371,7 +231,7 @@
           <div class="_5-col">
             <div class="footer1-column-headline">
               <div class="text-16-2">
-                GRUIĆ-SOVULJ  LAB<br />PROTEIN SYNTHESIS GROUP
+                GRUIĆ-SOVULJ LAB<br />PROTEIN SYNTHESIS GROUP
               </div>
             </div>
             <p class="text-14 text-14-60">
