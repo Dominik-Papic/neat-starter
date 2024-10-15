@@ -130,7 +130,7 @@
             <h1 class="heading">Welcome</h1>
             <div class="div-block-4"></div>
             <p class="paragraph">
-              {{ welcome.data.welcome_text }}
+              {{ welcome.data.welcome_text | markdown | safe}}
             </p>
           </div>
         </div>
