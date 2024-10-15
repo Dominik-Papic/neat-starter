@@ -94,7 +94,7 @@
     </div>
     <section class="section-4-copy f">
       <div class="div-block-14">
-        <h1 class="heading-5-copy">{{ collections.cv[0].data.title }}</h1>
+        <h1 class="heading-5-copy">{{ collections.cv[0].data.title | safe}}</h1>
         <div class="paragraph-3">
           {{ collections.cv[0].data.description | markdown | safe}}
         </div>

@@ -57,13 +57,6 @@ collections:
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Content", name: "content", widget: "markdown" }
       
-  - name: "alumni"
-    label: "Alumni"
-    folder: "src/alumni"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
 
   - name: "publications"
     label: "Publications"
