@@ -1,5 +1,5 @@
 ---
-title: EMBO Membership
+title: Welcome
 welcome_text: Protein biosynthesis is a fundamental process in which genetic
   information is translated into functional cellular proteome. The key players
   are aminoacyl-tRNA synthetases, the enzymes that read the genetic code by
