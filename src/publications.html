@@ -103,7 +103,7 @@
             <div class="publicationelement">
               <div class="w-richtext"> 
                 <strong>• {{ publication.data.title }}</strong>
-                  <div style="margin-top: 0; margin-bottom: 10px;">{{ publication.data.description | markdown | safe}}</div>
+                  <div style = "margin-top: 0; margin-bottom: 10px;">{{ publication.data.description | markdown | safe}}</div>
               </div>
             </div>
             {% endfor %}
@@ -120,7 +120,7 @@
           <div class="publicationelement">
             <div class="w-richtext"> 
                 <strong>• {{ publication.data.title }}</strong>
-                <p>{{ publication.data.description }}</p>
+                <div style = "margin-top: 0; margin-bottom: 10px;">{{ publication.data.description | markdown | safe}}</div>
             </div>
           </div>
         {% endfor %}
