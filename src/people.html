@@ -177,7 +177,7 @@
             <div class="name">{{ collaborator.data.institutionname }}</div>
             <div class="div-block-16">
               <div class="div-block-18 y">
-                <div class="contact">{{ collaborator.data.names | safe }}</div>
+                <div class="contact">{{ collaborator.data.names | markdown | safe }}</div>
               </div>
             </div>
           </div>
