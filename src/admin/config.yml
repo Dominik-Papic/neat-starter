@@ -66,6 +66,16 @@ collections:
       - { label: "Institution Name", name: "institutionname", widget: "string" }
       - { label: "Names", name: "description", widget: "markdown" }
 
+
+  - name: "formercollaborators"
+    label: "Former Collaborators"
+    folder: "src/formercollaborators"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Institution Name", name: "institutionname", widget: "string" }
+      - { label: "Names", name: "description", widget: "markdown" }
+
   - name: "alumni"
     label: "Alumni"
     folder: "src/alumni"

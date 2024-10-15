@@ -68,6 +68,10 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/collaborators/*.md");
   });
 
+  eleventyConfig.addCollection("formercollaborators", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/formercollaborators/*.md");
+  });
+
   eleventyConfig.addCollection("publications", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/publications/*.md").reverse();
   });

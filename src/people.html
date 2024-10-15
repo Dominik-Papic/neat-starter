@@ -189,22 +189,16 @@
       <div class="div-block-14">
         <h1 class="heading-5">Former Collaborators</h1>
         <div class="div-block-15">
-          <div
-            id="w-node-_163c0e6b-c5ef-3794-990a-a812439ff937-7e3352eb"
-            class="peopleelement u"
-          >
-            <div class="name">Portland State University</div>
+          {% for formercollaborator in collections.formercollaborators %}
+          <div id="w-node-{{ formercollaborator.data.slug }}" class="peopleelement u">
+            <div class="name">{{ formercollaborator.data.institutionname }}</div>
             <div class="div-block-16">
               <div class="div-block-18 y">
-                <div class="contact">
-                  <a
-                    href="http://web.archive.org/web/20220812172658/http://www.bangroup.ethz.ch/"
-                    >prof. dr. sc. John Perona</a
-                  >
-                </div>
+                <div class="contact">{{ formercollaborator.data.description | markdown | safe }}</div>
               </div>
             </div>
           </div>
+          {% endfor %}
         </div>
       </div>
     </section>
