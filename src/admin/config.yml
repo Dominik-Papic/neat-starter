@@ -91,3 +91,11 @@ collections:
       - { label: "Room Number", name: "room", widget: "string" }
       - { label: "Email", name: "email", widget: "string" }
       - { label: "Phone", name: "phone", widget: "string" }
+  - name: "cv"
+    label: "CV"
+    folder: "src/cv"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }

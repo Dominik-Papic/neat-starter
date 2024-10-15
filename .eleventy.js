@@ -84,6 +84,10 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/peopleuvod/*.md");
   });
 
+  eleventyConfig.addCollection("cv", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/cv/*.md");
+  });
+
   return {
     dir: {
       input: "src",
