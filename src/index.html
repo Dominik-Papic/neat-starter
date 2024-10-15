@@ -129,9 +129,11 @@
           <div>
             <h1 class="heading">Welcome</h1>
             <div class="div-block-4"></div>
+            {% for welcome in collections.welcome %}
             <p class="paragraph">
               {{ welcome[0].data.description | safe}}
             </p>
+            {% endfor %}
           </div>
         </div>
 
