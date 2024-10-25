@@ -1,6 +1,6 @@
 ---
 title: EMBO Membership
-date: 2024-10-07T10:37:06.889Z
+date: 2024-07-15T07:18:50.499Z
 description: >-
   • Prof. Ita Gruic Sovulj was elected to the EMBO Membership. The formal
   welcome will be
