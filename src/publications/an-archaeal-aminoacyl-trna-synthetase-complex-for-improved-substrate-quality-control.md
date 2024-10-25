@@ -6,6 +6,6 @@ description: >-
   Crnković A**,*** Čavužić M, Godinić-Mikulčić V, Anderluh G, Weygand-Đurašević
   I, **Gruic-SovuljI***.
 
-  Biochimie. 147 (2018) 36-45.
+  Biochimie. 147 (2018) 36-45. <https://pubmed.ncbi.nlm.nih.gov/29273296/>
 selected: false
 ---
