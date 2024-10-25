@@ -6,6 +6,6 @@ description: >-
   Kekez M, Zanki V, Kekez I, Baranasic J, Hodnik V, Duchêne AM, Anderluh G,
   **Gruic-Sovulj I**,
 
-  Matković-Čalogović D, Weygand-Durasevic I, Rokov-Plavec J*. FEBS J. 286 (2019) 536-554 <https://febs.onlinelibrary.wiley.com/doi/10.1111/febs.14735>
+  Matković-Čalogović D, Weygand-Durasevic I, Rokov-Plavec J. FEBS J. 286 (2019) 536-554 <https://febs.onlinelibrary.wiley.com/doi/10.1111/febs.14735>
 selected: false
 ---
