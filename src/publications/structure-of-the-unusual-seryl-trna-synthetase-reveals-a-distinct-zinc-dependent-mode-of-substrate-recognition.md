@@ -1,7 +1,7 @@
 ---
 title: Structure of the unusual seryl-tRNA synthetase reveals a distinct
   zinc-dependent mode of substrate recognition
-date: 2024-10-25T09:48:43.802Z
+date: 2006-05-22T09:48:43.802Z
 description: >-
   Bilokapić S, Maier T, Ahel D, **Gruic-Sovulj I**, Söll D, Weygand-Đurašević I,
   Ban N. EMBO J. 25
