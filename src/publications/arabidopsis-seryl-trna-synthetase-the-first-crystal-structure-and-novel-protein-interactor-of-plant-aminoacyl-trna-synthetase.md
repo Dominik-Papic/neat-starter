@@ -4,8 +4,8 @@ title: "Arabidopsis seryl-tRNA synthetase: the first crystal structure and novel
 date: 2019-06-25T14:52:44.872Z
 description: >-
   Kekez M, Zanki V, Kekez I, Baranasic J, Hodnik V, Duchêne AM, Anderluh G,
-  Gruic-Sovulj I,
+  **Gruic-Sovulj I**,
 
-  Matković-Čalogović D, Weygand-Durasevic I, Rokov-Plavec J*. FEBS J. 286 (2019) 536-554
+  Matković-Čalogović D, Weygand-Durasevic I, Rokov-Plavec J*. FEBS J. 286 (2019) 536-554 <https://febs.onlinelibrary.wiley.com/doi/10.1111/febs.14735>
 selected: false
 ---
