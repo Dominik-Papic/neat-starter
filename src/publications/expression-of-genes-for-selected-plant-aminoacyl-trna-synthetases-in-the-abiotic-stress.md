@@ -6,6 +6,6 @@ description: >-
   Baranašić, J; Mihalak, A, **Gruic-Sovulj, I**, Bauer, N, Rokov Plavec, J*.
   Acta botanica Croatica, 80
 
-  (2021) 35-42
+  (2021) 35-42 <https://hrcak.srce.hr/243653>
 selected: false
 ---
