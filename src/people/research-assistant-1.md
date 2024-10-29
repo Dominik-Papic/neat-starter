@@ -1,4 +1,5 @@
 ---
+date: 2024-10-28T17:27:49.521Z
 name: Petra Kozulić, mag. chem
 title: research assistant
 contact: +385 1 4606 234

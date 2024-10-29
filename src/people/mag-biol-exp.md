@@ -1,4 +1,5 @@
 ---
+date: 2024-10-29T17:27:32.381Z
 name: Karla Peranić, mag. biol. exp.
 title: technician
 contact: +385 1 4606 236
