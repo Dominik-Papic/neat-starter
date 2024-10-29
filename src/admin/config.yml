@@ -47,8 +47,9 @@ collections:
     label: "People"
     folder: "src/people"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
+      - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Contact Info", name: "contact", widget: "string" }
