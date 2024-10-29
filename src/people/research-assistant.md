@@ -1,4 +1,5 @@
 ---
+date: 2024-10-28T17:28:29.227Z
 name: Robert Pendelić, univ. mag. biol. mol.
 title: research assistant
 contact: +385 1 4606 233
