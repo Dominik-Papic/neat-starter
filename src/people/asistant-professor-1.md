@@ -1,4 +1,5 @@
 ---
+date: 2024-10-29T17:23:29.558Z
 name: dr. sc. Morana Dulić
 title: asistant professor
 contact: +385 1 4606 235
