@@ -1,4 +1,4 @@
 ---
-institutionname: Earth-Life Science Institute Tokyo Institute of Science
+institutionname: ELSI -Tokyo Institute of Technology
 description: P﻿rof. Liam M Longo
 ---
