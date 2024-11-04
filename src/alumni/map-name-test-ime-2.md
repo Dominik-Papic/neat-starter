@@ -1,3 +1,3 @@
 ---
-name: Test ime
+name: dr.  Vladimir Zanki
 ---
