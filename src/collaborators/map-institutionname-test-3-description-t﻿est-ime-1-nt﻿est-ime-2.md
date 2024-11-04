@@ -1,6 +1,4 @@
 ---
-institutionname: Test 3
-description: |-
-  T﻿est Ime 1\
-  T﻿est Ime 2
+institutionname: University of Sydney
+description: Prof. Jeffery Errington
 ---
