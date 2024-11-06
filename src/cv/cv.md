@@ -2,14 +2,14 @@
 title: Curriculum vitae
 permalink: /cv/cv-file/
 description: >-
-  <!--\[if gte mso 9]><xml>
+  <!--\\[if gte mso 9]><xml>
    <o:OfficeDocumentSettings>
     <o:AllowPNG/>
    </o:OfficeDocumentSettings>
-  </xml><!\[endif]-->
+  </xml><!\\[endif]-->
 
 
-  <!--\[if gte mso 9]><xml>
+  <!--\\[if gte mso 9]><xml>
    <w:WordDocument>
     <w:View>Normal</w:View>
     <w:Zoom>0</w:Zoom>
@@ -49,10 +49,10 @@ description: >-
      <m:intLim m:val="subSup"/>
      <m:naryLim m:val="undOvr"/>
     </m:mathPr></w:WordDocument>
-  </xml><!\[endif]-->
+  </xml><!\\[endif]-->
 
 
-  <!--\[if gte mso 9]><xml>
+  <!--\\[if gte mso 9]><xml>
    <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
     DefSemiHidden="false" DefQFormat="false" DefPriority="99"
     LatentStyleCount="371">
@@ -621,10 +621,10 @@ description: >-
     <w:LsdException Locked="false" Priority="52"
      Name="List Table 7 Colorful Accent 6"/>
    </w:LatentStyles>
-  </xml><!\[endif]-->
+  </xml><!\\[endif]-->
 
 
-  <!--\[if gte mso 10]>
+  <!--\\[if gte mso 10]>
 
   <style>
    /* Style Definitions */
@@ -649,13 +649,10 @@ description: >-
   	mso-fareast-language:EN-US;}
   </style>
 
-  <!\[endif]-->
+  <!\\[endif]-->
 
 
   <!--StartFragment-->
-
-
-   
 
 
   *Education*
@@ -670,10 +667,6 @@ description: >-
   1993                Bachelor of Science in Chemistry, University of Zagreb Faculty of Science
 
 
-   
-
-
-   
 
 
   *Employment*
@@ -694,10 +687,6 @@ description: >-
   1994 – 2005    Teaching assistant, University of Zagreb, Faculty of Science
 
 
-   
-
-
-   
 
 
   *Scholarships and awards*
@@ -715,10 +704,6 @@ description: >-
   1996    DAAD fellowship
 
 
-   
-
-
-   
 
 
   *Scientific visits*
@@ -736,19 +721,6 @@ description: >-
   2024                Visit to Liam M Longo lab at ELSI Tokyo Institute of Technology (two months)
 
 
-   
-
-
-   
-
-
-  *Mentorship*
-
-
-   
-
-
-   
 
 
   *Teaching*
@@ -757,22 +729,10 @@ description: >-
   Biochemistry 1 (undergraduate course), Mechanisms of Catalysis in Biological Systems (graduate course), Enzymes: kinetics and Reaction Mechanisms (doctoral studies), Translational Quality Control (doctoral studies)
 
 
-   
-
-
-   
-
-
   *Memberships:*
 
 
-  Croatian Society for Biochemistry and Molecular Biology
-
-
-  Croatian Chemical Society
-
-
-   
+  Croatian Society for Biochemistry and Molecular Biology, Croatian Chemical Society 
 
 
 
@@ -780,71 +740,37 @@ description: >-
   *Invited talks*
 
 
-
-
-  Unexpected alteration in the signature motif of a class I aminoacyl-tRNA synthetase confers antibiotic hyper-resistance*;* FEBS3+. Exploring molecular frontiers, 2024, Pula, Croatia
-
-
+  Unexpected alteration in the signature motif of a class I aminoacyl-tRNA synthetase confers antibiotic hyper-resistance*;* FEBS3+ Exploring molecular frontiers, 2024, Pula, Croatia
 
 
   Steady-state and pre-steady state reactions: the case of aminoacyl-tRNA synthetases; FEBS Advanced course „Computational Approaches to Understanding and Engineering Enzyme Catalysis”, 2023, Zagreb, Croatia
 
 
-   
-
-
   Mupirocin hyper-resistance secured by naturally altered class I signature moti*f*; 13th International Symposium on Aminoacyl-tRNA Synthetases, 2023, Grand Bend, Ontario, Canada.
-
-
-   
 
 
   Keeping translation canonical: Lessons from aminoacyl-tRNA synthetases; The 45th FEBS Congress: Molecules of Life: Towards New Horizons, 2021, Ljubljana, Slovenia.
 
 
-   
-
-
   What shaped selectivity of the class I editing domain? 12th International Symposium on Aminoacyl-tRNA Synthetases, 2019, Hangzhou, China.
-
-
-   
 
 
   Crosstalk of the synthetic and editing pathways that excludes artificial amino acids from translation, 11th International Symposium on Aminoacyl-tRNA Synthetases, 2017, Florida, US.
 
 
-   
-
-
   Maintaining the Canonical Amino Acid Alphabet: a Story about Aminoacyl-tRNA Synthetases, XXV Croatian meeting of chemists and chemical engineers, 2017, Poreč, Croatia.
-
-
-   
 
 
   Distinctive mechanisms of amino acid selection in the synthetic and editing sites of tRNA synthetases; MiniSimposium: Advances in molecular interaction analysis, Nacional Institute of Chemistry, 2016, Ljubljana, Slovenia.
 
 
-   
-
-
   Aminoacyl-tRNA synthetases: gatekeepers of the standard genetic cod*e;* Workshop: The unusual suspects in neurodegeneration: Role of non proteinogenic amino acids, 2016, Leiden, Netherlands.
-
-
-   
 
 
   Aminoacyl-tRNA synthetase editing preserves the canonical genetic code; FEBS3+ Meeting "Molecules of Life”, 2015, Portorož, Slovenia.
 
 
-   
-
-
   Class I aaRS quality control mechanisms preserve canonical translation in Escherichia coli; 25th tRNA Conference 2014, Kyllini, Greece
-
-
-   
 
 
 
@@ -868,12 +794,6 @@ description: >-
 
 
   Member of the University Council in the field of Natural Sciences (2017-2021)   
-
-
-   
-
-
-   
 
 
   <!--EndFragment-->
