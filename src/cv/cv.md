@@ -1,5 +1,5 @@
 ---
-title: "CV "
+title: Curriculum vitae
 permalink: /cv/cv-file/
 description: >-
   <!--\[if gte mso 9]><xml>
@@ -655,15 +655,6 @@ description: >-
   <!--StartFragment-->
 
 
-  *Curriculum vitae*
-
-
-   
-
-
-  Ita Gruić Sovulj
-
-
    
 
 
@@ -677,6 +668,9 @@ description: >-
 
 
   1993                Bachelor of Science in Chemistry, University of Zagreb Faculty of Science
+
+
+   
 
 
    
@@ -703,6 +697,9 @@ description: >-
    
 
 
+   
+
+
   *Scholarships and awards*
 
 
@@ -716,6 +713,9 @@ description: >-
 
 
   1996    DAAD fellowship
+
+
+   
 
 
    
@@ -739,7 +739,13 @@ description: >-
    
 
 
+   
+
+
   *Mentorship*
+
+
+   
 
 
    
@@ -749,6 +755,9 @@ description: >-
 
 
   Biochemistry 1 (undergraduate course), Mechanisms of Catalysis in Biological Systems (graduate course), Enzymes: kinetics and Reaction Mechanisms (doctoral studies), Translational Quality Control (doctoral studies)
+
+
+   
 
 
    
@@ -766,69 +775,73 @@ description: >-
    
 
 
+
+
   *Invited talks*
 
 
 
 
-  *Unexpected alteration in the signature motif of a class I aminoacyl-tRNA synthetase confers antibiotic hyper-resistance;* FEBS3+. Exploring molecular frontiers, 2024, Pula, Croatia
+  Unexpected alteration in the signature motif of a class I aminoacyl-tRNA synthetase confers antibiotic hyper-resistance*;* FEBS3+. Exploring molecular frontiers, 2024, Pula, Croatia
 
 
-  *Steady-state and pre-steady state reactions: the case of aminoacyl-tRNA synthetases*; FEBS Advanced course „Computational Approaches to Understanding and Engineering Enzyme Catalysis”, 2023, Zagreb, Croatia
 
 
-   
-
-
-  *Mupirocin hyper-resistance secured by naturally altered class I signature motif*; 13th International Symposium on Aminoacyl-tRNA Synthetases, 2023, Grand Bend, Ontario, Canada.
+  Steady-state and pre-steady state reactions: the case of aminoacyl-tRNA synthetases; FEBS Advanced course „Computational Approaches to Understanding and Engineering Enzyme Catalysis”, 2023, Zagreb, Croatia
 
 
    
 
 
-  *Keeping translation canonical: Lessons from aminoacyl-tRNA synthetases;* The 45th FEBS Congress: Molecules of Life: Towards New Horizons, 2021, Ljubljana, Slovenia.
+  Mupirocin hyper-resistance secured by naturally altered class I signature moti*f*; 13th International Symposium on Aminoacyl-tRNA Synthetases, 2023, Grand Bend, Ontario, Canada.
 
 
    
 
 
-  *What shaped selectivity of the class I editing domain?* 12th International Symposium on Aminoacyl-tRNA Synthetases, 2019, Hangzhou, China.
+  Keeping translation canonical: Lessons from aminoacyl-tRNA synthetases; The 45th FEBS Congress: Molecules of Life: Towards New Horizons, 2021, Ljubljana, Slovenia.
 
 
    
 
 
-  *Crosstalk of the synthetic and editing pathways that excludes artificial amino acids from translation*, 11th International Symposium on Aminoacyl-tRNA Synthetases, 2017, Florida, US.
+  What shaped selectivity of the class I editing domain? 12th International Symposium on Aminoacyl-tRNA Synthetases, 2019, Hangzhou, China.
 
 
    
 
 
-  *Maintaining the Canonical Amino Acid Alphabet: a Story about Aminoacyl-tRNA Synthetase*s, XXV Croatian meeting of chemists and chemical engineers, 2017, Poreč, Croatia.
+  Crosstalk of the synthetic and editing pathways that excludes artificial amino acids from translation, 11th International Symposium on Aminoacyl-tRNA Synthetases, 2017, Florida, US.
 
 
    
 
 
-  *Distinctive mechanisms of amino acid selection in the synthetic and editing sites of tRNA synthetases*; MiniSimposium: Advances in molecular interaction analysis, Nacional Institute of Chemistry, 2016, Ljubljana, Slovenia.
+  Maintaining the Canonical Amino Acid Alphabet: a Story about Aminoacyl-tRNA Synthetases, XXV Croatian meeting of chemists and chemical engineers, 2017, Poreč, Croatia.
 
 
    
 
 
-  *Aminoacyl-tRNA synthetases: gatekeepers of the standard genetic code;* Workshop: The unusual suspects in neurodegeneration: Role of non proteinogenic amino acids, 2016, Leiden, Netherlands.
+  Distinctive mechanisms of amino acid selection in the synthetic and editing sites of tRNA synthetases; MiniSimposium: Advances in molecular interaction analysis, Nacional Institute of Chemistry, 2016, Ljubljana, Slovenia.
 
 
    
 
 
-  *Aminoacyl-tRNA synthetase editing preserves the canonical genetic code*; FEBS3+ Meeting "Molecules of Life”, 2015, Portorož, Slovenia.
+  Aminoacyl-tRNA synthetases: gatekeepers of the standard genetic cod*e;* Workshop: The unusual suspects in neurodegeneration: Role of non proteinogenic amino acids, 2016, Leiden, Netherlands.
 
 
    
 
 
-  *Class I aaRS quality control mechanisms preserve canonical translation in Escherichia coli*; 25th tRNA Conference 2014, Kyllini, Greece
+  Aminoacyl-tRNA synthetase editing preserves the canonical genetic code; FEBS3+ Meeting "Molecules of Life”, 2015, Portorož, Slovenia.
+
+
+   
+
+
+  Class I aaRS quality control mechanisms preserve canonical translation in Escherichia coli; 25th tRNA Conference 2014, Kyllini, Greece
 
 
    
@@ -855,6 +868,12 @@ description: >-
 
 
   Member of the University Council in the field of Natural Sciences (2017-2021)   
+
+
+   
+
+
+   
 
 
   <!--EndFragment-->
