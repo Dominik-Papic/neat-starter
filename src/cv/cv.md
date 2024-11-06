@@ -1,5 +1,5 @@
 ---
-title: CV privremeni naslov
+title: "CV "
 permalink: /cv/cv-file/
 description: >-
   <!--\[if gte mso 9]><xml>
