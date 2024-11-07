@@ -2,14 +2,14 @@
 title: Curriculum vitae
 permalink: /cv/cv-file/
 description: >-
-  <!--\\[if gte mso 9]><xml>
+  <!--\[if gte mso 9]><xml>
    <o:OfficeDocumentSettings>
     <o:AllowPNG/>
    </o:OfficeDocumentSettings>
-  </xml><!\\[endif]-->
+  </xml><!\[endif]-->
 
 
-  <!--\\[if gte mso 9]><xml>
+  <!--\[if gte mso 9]><xml>
    <w:WordDocument>
     <w:View>Normal</w:View>
     <w:Zoom>0</w:Zoom>
@@ -49,10 +49,10 @@ description: >-
      <m:intLim m:val="subSup"/>
      <m:naryLim m:val="undOvr"/>
     </m:mathPr></w:WordDocument>
-  </xml><!\\[endif]-->
+  </xml><!\[endif]-->
 
 
-  <!--\\[if gte mso 9]><xml>
+  <!--\[if gte mso 9]><xml>
    <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
     DefSemiHidden="false" DefQFormat="false" DefPriority="99"
     LatentStyleCount="371">
@@ -621,10 +621,10 @@ description: >-
     <w:LsdException Locked="false" Priority="52"
      Name="List Table 7 Colorful Accent 6"/>
    </w:LatentStyles>
-  </xml><!\\[endif]-->
+  </xml><!\[endif]-->
 
 
-  <!--\\[if gte mso 10]>
+  <!--\[if gte mso 10]>
 
   <style>
    /* Style Definitions */
@@ -649,7 +649,7 @@ description: >-
   	mso-fareast-language:EN-US;}
   </style>
 
-  <!\\[endif]-->
+  <!\[endif]-->
 
 
   <!--StartFragment-->
@@ -667,115 +667,49 @@ description: >-
   1993                Bachelor of Science in Chemistry, University of Zagreb Faculty of Science
 
 
+   
 
 
   *Employment*
 
 
-  2023 -             Tenured Full professor, University of Zagreb Faculty of Science
+  2023 -              Tenured Full professor, University of Zagreb Faculty of Science
 
 
-  2018  –2023    Full professor, University of Zagreb Faculty of Science       
+  2018 - 2023      Full professor, University of Zagreb Faculty of Science 
 
 
-  2012 – 2018    Associate professor, University of Zagreb Faculty of Science
+  2012 - 2018      Associate professor, University of Zagreb Faculty of Science
 
 
-  2005 – 2012    Assistant professor, University of Zagreb, Faculty of Science         
+  2005 - 2012      Assistant professor, University of Zagreb, Faculty of Science    
 
 
-  1994 – 2005    Teaching assistant, University of Zagreb, Faculty of Science
+  1994 - 2005      Teaching assistant, University of Zagreb, Faculty of Science
 
 
+   
 
 
   *Scholarships and awards*
 
 
-  2024    Elected EMBO Member
+  2024     Elected EMBO Member
 
 
-  2014    National Science Awards of the Republic of Croatia (Annual Science Award) for an outstanding scientific discovery in the field of protein synthesis.
+  2014     National Science Awards of the Republic of Croatia (Annual Science Award) for an outstanding scientific discovery in the field of protein synthesis.
 
 
   2003    NATO-NSF postdoctoral fellowship
 
 
-  1996    DAAD fellowship
+  1996     DAAD fellowship
 
 
+   
 
 
-  *Scientific visits*
-
-
-  1996-1997      visit to Jasna Peter Katalinić and Franz Hillenkap labs at the University of Muenster, Germany (four months)
-
-
-  2003-2004      Postdoctoral training with John J Perona; University of California at Santa Barbara, US
-
-
-  2020                Visit to Dan S. Tawfik lab at the Weizmann Institute of Science (one month)
-
-
-  2024                Visit to Liam M Longo lab at ELSI Tokyo Institute of Technology (two months)
-
-
-
-
-  *Teaching*
-
-
-  Biochemistry 1 (undergraduate course), Mechanisms of Catalysis in Biological Systems (graduate course), Enzymes: kinetics and Reaction Mechanisms (doctoral studies), Translational Quality Control (doctoral studies)
-
-
-  *Memberships:*
-
-
-  Croatian Society for Biochemistry and Molecular Biology, Croatian Chemical Society 
-
-
-
-
-  *Invited talks*
-
-
-  Unexpected alteration in the signature motif of a class I aminoacyl-tRNA synthetase confers antibiotic hyper-resistance*;* FEBS3+ Exploring molecular frontiers, 2024, Pula, Croatia
-
-
-  Steady-state and pre-steady state reactions: the case of aminoacyl-tRNA synthetases; FEBS Advanced course „Computational Approaches to Understanding and Engineering Enzyme Catalysis”, 2023, Zagreb, Croatia
-
-
-  Mupirocin hyper-resistance secured by naturally altered class I signature moti*f*; 13th International Symposium on Aminoacyl-tRNA Synthetases, 2023, Grand Bend, Ontario, Canada.
-
-
-  Keeping translation canonical: Lessons from aminoacyl-tRNA synthetases; The 45th FEBS Congress: Molecules of Life: Towards New Horizons, 2021, Ljubljana, Slovenia.
-
-
-  What shaped selectivity of the class I editing domain? 12th International Symposium on Aminoacyl-tRNA Synthetases, 2019, Hangzhou, China.
-
-
-  Crosstalk of the synthetic and editing pathways that excludes artificial amino acids from translation, 11th International Symposium on Aminoacyl-tRNA Synthetases, 2017, Florida, US.
-
-
-  Maintaining the Canonical Amino Acid Alphabet: a Story about Aminoacyl-tRNA Synthetases, XXV Croatian meeting of chemists and chemical engineers, 2017, Poreč, Croatia.
-
-
-  Distinctive mechanisms of amino acid selection in the synthetic and editing sites of tRNA synthetases; MiniSimposium: Advances in molecular interaction analysis, Nacional Institute of Chemistry, 2016, Ljubljana, Slovenia.
-
-
-  Aminoacyl-tRNA synthetases: gatekeepers of the standard genetic cod*e;* Workshop: The unusual suspects in neurodegeneration: Role of non proteinogenic amino acids, 2016, Leiden, Netherlands.
-
-
-  Aminoacyl-tRNA synthetase editing preserves the canonical genetic code; FEBS3+ Meeting "Molecules of Life”, 2015, Portorož, Slovenia.
-
-
-  Class I aaRS quality control mechanisms preserve canonical translation in Escherichia coli; 25th tRNA Conference 2014, Kyllini, Greece
-
-
-
-
-  *Other commitments*
+  *Commitments at the University of Zagreb*
 
 
   Head of the Biochemistry Division, Chemistry Department, University of Zagreb Faculty of Science
@@ -794,6 +728,130 @@ description: >-
 
 
   Member of the University Council in the field of Natural Sciences (2017-2021)   
+
+
+   
+
+
+  *Scientific visits*
+
+
+  1996-1997        visit to Jasna Peter Katalinić and Franz Hillenkap labs at the University of Muenster, Germany
+
+
+  2003-2004        Postdoctoral training with John J Perona; University of California at Santa Barbara, US
+
+
+  2020                Visit to Dan S Tawfik lab at the Weizmann Institute of Science
+
+
+  2024                 Visit to Liam M Longo lab at ELSI Tokyo Institute of Technology
+
+
+   
+
+
+  *Mentorship*
+
+
+  PhD students – finished: Ana Crnković, Morana Dulić, Nevena Cvetešić, Mirna Biluš, Igor Živković, Vladimir Zanki – ongoing: Alojzije Brkić, Petra Kozulić
+
+
+
+
+  *Teaching*
+
+
+  Biochemistry 1 (undergraduate course), Mechanisms of Catalysis in Biological Systems (graduate course), Enzymes: kinetics and Reaction Mechanisms (doctoral studies), Translational Quality Control (doctoral studies)
+
+
+   
+
+
+  *Memberships:*
+
+
+  European Molecular Biology Organization (EMBO), Croatian Society for Biochemistry and Molecular Biology, Croatian Chemical Society
+
+
+  *Invited talks*
+
+
+  **Unexpected alteration in the signature motif of a class I aminoacyl-tRNA synthetase confers antibiotic hyper-resistance***;* FEBS3+. Exploring molecular frontiers, 2024, Pula, Croatia
+
+
+  **Isoleucyl-tRNA synthetase: new insights into editing and antibiotic resistance mechanisms,** ELSI Seminar, 2023,Tokyo, Japan (online)
+
+
+  **Steady-state and pre-steady state reactions: the case of aminoacyl-tRNA synthetase**s; FEBS Advanced course „Computational Approaches to Understanding and Engineering Enzyme Catalysis”, 2023, Zagreb, Croatia
+
+
+  **Mupirocin hyper-resistance secured by naturally altered class I signature motif**; 13th International Symposium on Aminoacyl-tRNA Synthetases, 2023, Grand Bend, Ontario, Canada.
+
+
+  **Isoleucyl-tRNA synthetase: from negative catalysis to antibiotic resistance,** Seminar at the Institute for Biochemistry, Leipzig University, 2022, Germany (online)
+
+
+  **Isoleucyl-tRNA synthetase: from negative catalysis to antibiotic resistance,** Seminar at the Newcastle University, 2022, Newcastle, UK
+
+
+  **Keeping translation canonical: Lessons from aminoacyl-tRNA synthetases**; The 45th FEBS Congress: Molecules of Life: Towards New Horizons, 2021, Ljubljana, Slovenia (online)
+
+
+  **What shaped selectivity of the class I editing domain?** 12th International Symposium on Aminoacyl-tRNA Synthetases, 2019, Hangzhou, China.
+
+
+  **Aminoacyl-tRNA synthetases: checkpoints of the proteinogenic amino acid alphabet,** Seminar at the Department of Biomolecular Sciences, Weizmann Institute of Science, 2018, Israel
+
+
+  **Crosstalk of the synthetic and editing pathways that excludes artificial amino acids from translation**, 11th International Symposium on Aminoacyl-tRNA Synthetases, 2017, Florida, US.
+
+
+  **Maintaining the Canonical Amino Acid Alphabet: a Story about Aminoacyl-tRNA Synthetases**, XXV Croatian meeting of chemists and chemical engineers, 2017, Poreč, Croatia.
+
+
+  **Synthetic and proofreading mechanisms of class I aminoacyl-tRNA synthetases,** Seminar at the TU Berlin, 2017, Germany
+
+
+  **Distinctive mechanisms of amino acid selection in the synthetic and editing sites of tRNA synthetases**; MiniSimposium: Advances in molecular interaction analysis, Nacional Institute of Chemistry, 2016, Ljubljana, Slovenia.
+
+
+  **Aminoacyl-tRNA synthetases: gatekeepers of the standard genetic cod*e****;* Workshop: The unusual suspects in neurodegeneration: Role of non proteinogenic amino acids, 2016, Leiden, Netherlands.
+
+
+  **Aminoacyl-tRNA synthetase editing preserves the canonical genetic code**; FEBS3+ Meeting "Molecules of Life”, 2015, Portorož, Slovenia.
+
+
+  **Class I aaRS quality control mechanisms preserve canonical translation in *Escherichia coli***; 25th tRNA Conference 2014, Kyllini, Greece
+
+
+
+
+  *Funded projects*
+
+
+  2024-2028 **Investigation of aminoacyl-tRNA synthetases as targets for antibiotics and how they develop resistance mechanisms** (collaboration with Nenad Ban and Jeff Errington), Funding: Croatian Science Foundation and Swiss National Science Foundation
+
+
+  2019-2023 **Investigation of substrate and editing specificity in tRNA synthetases and the mechanism of antibiotic action** (collaboration with Nenad Ban and Dan Tawfik), Funding: Swiss National Science Foundation and Croatian Science Foundation
+
+
+  2017-2021  **Aminoacyl-tRNA synthetases as gatekeepers of the standard genetic code**, Funding: Croatian Science Foundation
+
+
+  2018-2020 **Cellular responses to canonical and non-canonical mistranslation** (collaboration with B. Maček),Funding: Ministry of Science and Education of the Republic of Croatia and DAAD 
+
+
+  2014-2016 **Role of translational quality control mechanisms in maintaining the functional *Escherichia coli* proteome** (collaboration with B. Maček), Funding: Ministry of Science and Education of the Republic of Croatia and DAAD 
+
+
+  2013-2016 **Noncanonical roles of aminoacyl-tRNA synthetases**, Funding: Croatian Science Foundation
+
+
+  2013-2015  **The origin of amino acid specificity in editing class I aminoacyl-tRNA synthetases and cellular requirements for proofreading** (collaboration with B. Lenhard and S. Cusack), Funding: Unity Through Knowledge Fund
+
+
+  2008-2011 **Mechanism of proofreading by class I aminoacyl-tRNA synthetases** (collaboration with J. Perona), Funding: NIH/FIRCA
 
 
   <!--EndFragment-->
