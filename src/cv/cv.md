@@ -2,14 +2,14 @@
 title: Curriculum vitae
 permalink: /cv/cv-file/
 description: >-
-  <!--\[if gte mso 9]><xml>
+  <!--\\[if gte mso 9]><xml>
    <o:OfficeDocumentSettings>
     <o:AllowPNG/>
    </o:OfficeDocumentSettings>
-  </xml><!\[endif]-->
+  </xml><!\\[endif]-->
 
 
-  <!--\[if gte mso 9]><xml>
+  <!--\\[if gte mso 9]><xml>
    <w:WordDocument>
     <w:View>Normal</w:View>
     <w:Zoom>0</w:Zoom>
@@ -49,10 +49,10 @@ description: >-
      <m:intLim m:val="subSup"/>
      <m:naryLim m:val="undOvr"/>
     </m:mathPr></w:WordDocument>
-  </xml><!\[endif]-->
+  </xml><!\\[endif]-->
 
 
-  <!--\[if gte mso 9]><xml>
+  <!--\\[if gte mso 9]><xml>
    <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
     DefSemiHidden="false" DefQFormat="false" DefPriority="99"
     LatentStyleCount="371">
@@ -621,10 +621,10 @@ description: >-
     <w:LsdException Locked="false" Priority="52"
      Name="List Table 7 Colorful Accent 6"/>
    </w:LatentStyles>
-  </xml><!\[endif]-->
+  </xml><!\\[endif]-->
 
 
-  <!--\[if gte mso 10]>
+  <!--\\[if gte mso 10]>
 
   <style>
    /* Style Definitions */
@@ -649,13 +649,13 @@ description: >-
   	mso-fareast-language:EN-US;}
   </style>
 
-  <!\[endif]-->
+  <!\\[endif]-->
 
 
   <!--StartFragment-->
 
 
-  *Education*
+  ### Education
 
 
   2001                PhD in Chemistry, Biochemistry, University of Zagreb, Faculty of Science
@@ -665,9 +665,6 @@ description: >-
 
 
   1993                Bachelor of Science in Chemistry, University of Zagreb Faculty of Science
-
-
-   
 
 
   *Employment*
@@ -688,9 +685,6 @@ description: >-
   1994 - 2005      Teaching assistant, University of Zagreb, Faculty of Science
 
 
-   
-
-
   *Scholarships and awards*
 
 
@@ -704,9 +698,6 @@ description: >-
 
 
   1996     DAAD fellowship
-
-
-   
 
 
   *Commitments at the University of Zagreb*
@@ -730,9 +721,6 @@ description: >-
   Member of the University Council in the field of Natural Sciences (2017-2021)   
 
 
-   
-
-
   *Scientific visits*
 
 
@@ -748,24 +736,16 @@ description: >-
   2024                 Visit to Liam M Longo lab at ELSI Tokyo Institute of Technology
 
 
-   
-
-
   *Mentorship*
 
 
   PhD students – finished: Ana Crnković, Morana Dulić, Nevena Cvetešić, Mirna Biluš, Igor Živković, Vladimir Zanki – ongoing: Alojzije Brkić, Petra Kozulić
 
 
-
-
   *Teaching*
 
 
   Biochemistry 1 (undergraduate course), Mechanisms of Catalysis in Biological Systems (graduate course), Enzymes: kinetics and Reaction Mechanisms (doctoral studies), Translational Quality Control (doctoral studies)
-
-
-   
 
 
   *Memberships:*
@@ -816,15 +796,13 @@ description: >-
   **Distinctive mechanisms of amino acid selection in the synthetic and editing sites of tRNA synthetases**; MiniSimposium: Advances in molecular interaction analysis, Nacional Institute of Chemistry, 2016, Ljubljana, Slovenia.
 
 
-  **Aminoacyl-tRNA synthetases: gatekeepers of the standard genetic cod*e****;* Workshop: The unusual suspects in neurodegeneration: Role of non proteinogenic amino acids, 2016, Leiden, Netherlands.
+  **Aminoacyl-tRNA synthetases: gatekeepers of the standard genetic cod\*e\****;* Workshop: The unusual suspects in neurodegeneration: Role of non proteinogenic amino acids, 2016, Leiden, Netherlands.
 
 
   **Aminoacyl-tRNA synthetase editing preserves the canonical genetic code**; FEBS3+ Meeting "Molecules of Life”, 2015, Portorož, Slovenia.
 
 
   **Class I aaRS quality control mechanisms preserve canonical translation in *Escherichia coli***; 25th tRNA Conference 2014, Kyllini, Greece
-
-
 
 
   *Funded projects*
