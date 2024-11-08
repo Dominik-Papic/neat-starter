@@ -1,3 +1,3 @@
 ---
-name: dr.  Vladimir Zanki
+name: Dr.  Vladimir Zanki
 ---
