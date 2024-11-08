@@ -5,6 +5,6 @@ title: Assistant Professor
 contact: +385 1 4606 235
 email: mdulic@chem.pmf.hr
 brojsobe: ZBK/312a
-image: /static/img/morana-20dulic.jpg
+image: /static/img/mdulic_fotka.jpg
 content: t﻿emp
 ---
