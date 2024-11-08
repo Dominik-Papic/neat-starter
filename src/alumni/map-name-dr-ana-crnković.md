@@ -1,3 +1,3 @@
 ---
-name: dr. Ana Crnković
+name: Dr. Ana Crnković
 ---
