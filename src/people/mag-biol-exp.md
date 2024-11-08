@@ -5,6 +5,6 @@ title: Technician
 contact: +385 1 4606 236
 email: karla.peranic@chem.pmf.hr
 brojsobe: ZBK/310
-image: /static/img/img_20201116_125444.jpg
+image: /static/img/img_20201116_125444-1-.jpg
 content: temp
 ---
