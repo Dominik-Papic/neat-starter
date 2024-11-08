@@ -1,3 +1,3 @@
 ---
-name: dr. Mirna Biluš
+name: Dr. Mirna Biluš
 ---
