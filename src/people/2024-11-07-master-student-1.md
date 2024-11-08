@@ -5,6 +5,6 @@ title: Master Student
 contact: +385 1 4606 233
 email: adrian.bukovec@student.pmf.hr
 brojsobe: ZBK/301
-image: /static/img/img-20241107-wa0000.jpg
+image: /static/img/adrian.jpg
 content: t﻿emp
 ---
