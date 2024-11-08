@@ -1,4 +1,4 @@
 ---
 institutionname: ETH
-description: p﻿rof. Nenad Ban
+description: P﻿rof. Nenad Ban
 ---
