@@ -1,3 +1,3 @@
 ---
-name: dr. Nevena Cvetešić
+name: Dr. Nevena Cvetešić
 ---
