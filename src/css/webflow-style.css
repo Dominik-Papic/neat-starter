@@ -1195,6 +1195,7 @@ textarea.w-input, textarea.w-select {
   background: #ddd;
   height: 300px;
   position: relative;
+  max-width: 100%;
 }
 
 .w-slider-mask {
@@ -1206,6 +1207,7 @@ textarea.w-input, textarea.w-select {
   left: 0;
   right: 0;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .w-slide {
