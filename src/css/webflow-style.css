@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+.rich-text-content{
+  word-break: break-all;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
