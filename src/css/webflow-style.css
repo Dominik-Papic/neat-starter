@@ -16,7 +16,7 @@ body {
   display: inline-block;
   max-width: 100%;
   white-space: normal; 
-  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
