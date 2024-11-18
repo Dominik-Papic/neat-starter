@@ -1,5 +1,5 @@
 ---
-name: prof. dr. sc. Ita Gruić Sovulj
+name: Prof Ita Gruić Sovulj
 position: Professor
 room: ZBK/303
 email: gruic@chem.pmf.hr
